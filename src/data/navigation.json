@@ -1,0 +1,19 @@
+{
+  "items": [
+    {
+      "text": "Home",
+      "url": "/",
+      "external": false
+    },
+    {
+      "text": "Search",
+      "url": "/search/",
+      "external": false
+    },
+    {
+      "text": "Get ZeroPoint",
+      "url": "https://getzeropoint.com",
+      "external": true
+    }
+  ]
+}
