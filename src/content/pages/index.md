@@ -1,16 +1,16 @@
 ---
+title: 
 permalink: /
-title: Up to zero! 🪐
 ---
 
-## Get started
+<div class="image-grid">
+  <a href="/church" class="grid-item">
+    <img src="/assets/images/church.jpg" alt="Church Section">
+    <span class="overlay-text">Church</span>
+  </a>
 
-You can write content in HTML, [Markdown](https://github.com/adam-p/markdown-here/wiki/markdown-cheatsheet), or [Nunjucks](https://mozilla.github.io/nunjucks/). This page is written in Markdown.
-
-* Edit this page: `content/pages/index.md`
-* Add or edit navigation: `src/data/navigation.json`
-* Change colors and styles: `src/assets/styles/`
-
----
-
-<img src="/assets/images/favicon.svg" alt="Logo">
+  <a href="/childcare" class="grid-item">
+    <img src="/assets/images/childcare.jpg" alt="School Section">
+    <span class="overlay-text">Child Care</span>
+  </a>
+</div>

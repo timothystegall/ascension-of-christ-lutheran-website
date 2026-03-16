@@ -1,194 +1,155 @@
-# 🪐ZeroPoint Starter
-![starter-logo](https://github.com/user-attachments/assets/86aa94e9-88a9-4902-a622-b74f8e4216ea)
+# ascension-of-christ-lutheran-website
 
-👉 Get your website project up to zero.
+## Start building your website
 
-<a href="https://github.com/MWDelaney/ZeroPoint/generate">
-  <img src="https://img.shields.io/badge/use%20this-template-blueviolet?logo=github&style=for-the-badge" alt="Use this template">
-</a>
+Create and edit your site **right from this readme file!**.
+
+🪐 Or edit your entire site in a web-based editor by [clicking here](https://github.dev/Timothy Stegall/ascension-of-christ-lutheran-website/).
+
+<details>
+  <summary><strong>📝 Creating and editing pages</strong></summary>
+
+## Creating and editing pages and content
+
+### Pages
+
+Create your site's main content! Pages can be written in HTML or [Markdown](https://www.markdownguide.org/basic-syntax/)!
+
+* [Edit the homepage](https://github.com/Timothy Stegall/ascension-of-christ-lutheran-website/edit/main/src/content/pages/index.md)
+* [Create a new page](https://github.com/Timothy Stegall/ascension-of-christ-lutheran-website/new/main/?filename=/src/content/pages/&value=---%0Atitle%3A%20Enter%20page%20title%20here%0A---)
+
+<!--
 
 ---
-**⭐ If you just used this template repository ⭐**
+#### Posts
+Blog posts
+* [Create a new post](https://github.com/Timothy Stegall/ascension-of-christ-lutheran-website/new/main/?filename=/src/content/posts/&value=----%0Atitle%3A%20%22Enter%20post%20title%22%0Adate%3A%20%222025-01-01%0A---)
 
-Prepare your repository for use by removing ZeroPoint branding and replacing it with your own project name and description.
-
-<details>
-<summary>1. Allow GitHub Actions to write to your repository</summary>
-
-1. Click "Settings" in the top right corner of your repository
-2. Click "Actions/General" in the left sidebar
-3. Under "Workflow permissions" choose "Read and write permissions"
-4. Click "Save"
+-->
 </details>
 
 <details>
-<summary>2. Run the "Remove ZeroPoint branding" action</summary>
+  <summary><strong>🎨 Look and Feel</strong></summary>
 
-1. Click the "Actions" tab in the top navigation of your repository
-2. Click the "Remove ZeroPoint branding" workflow
-3. Click the "Run workflow" button, choose the `main` branch, and click the green "Run workflow" button
+## Look and Feel
+
+### Navigation
+
+Your site's navigation is how your users will get around! Edit the site's navigation menu in [JSON format](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/JSON)!
+
+* [Edit the navigation](https://github.com/Timothy Stegall/ascension-of-christ-lutheran-website/edit/main/src/data/navigation.json)
+
+### Styles
+
+Colors, spacing, and fonts, oh my! You can edit your branding and styles here using CSS, SCSS, and CSS variables! 
+
+* [Edit your branding](https://github.com/Timothy Stegall/ascension-of-christ-lutheran-website/edit/main/src/assets/styles/_branding.scss)
+* [Edit your overall styles](https://github.com/Timothy Stegall/ascension-of-christ-lutheran-website/edit/main/src/assets/styles/styles.scss)
+
+Learning CSS can be daunting but there are a ton of useful resources on the web. Check out [SmolCSS](https://smolcss.dev) to get started!
+
+### Javascript
+
+**Optional!** Add javascript functionality to your site
+
+* [Add Javascript](https://github.com/Timothy Stegall/ascension-of-christ-lutheran-website/edit/main/src/assets/scripts/main.js)
+
 </details>
 
-## What You Get
+<details>
+  <summary><strong>🚀 Deploy ascension-of-christ-lutheran-website</strong></summary>
 
-* 🚀 **Deploy anywhere** - Ready for [GitHub Pages](https://pages.github.com/), [Netlify](https://netlify.com/), [Cloudflare Pages](https://pages.cloudflare.com/), or your own server
-* 🔍 **Built-in search** - Full-text search with [Pagefind](https://pagefind.app/) already working at `/search/`
-* 📝 **Blog-ready** - Complete blog system ready to enable when you need it
-* 🖼️ **Image optimization** - Automatic image resizing and responsive images with [Eleventy Image](https://www.11ty.dev/docs/plugins/image/)
-* 🎯 **SEO features** - Meta tags, XML sitemap, and robots.txt included
-* ⚒️ **Modern tools** - Sass and JavaScript compilation with fast builds
-* 🗺️ **Clean code** - Organized project structure with modern JavaScript
-* 🎨 **Developer experience** - Live reload, code formatting, and intuitive configuration
-* 🔧 **Easy to extend** - Add your own components, filters, and plugins
+## Deploy ascension-of-christ-lutheran-website
 
-## Get started: Use This Template
+Once you set up deployment, any time you commit to your repository's `main` branch, GitHub will build and deploy your site.
 
-Start your project with ZeroPoint by clicking the "Use this template" button below:
+<details>
+  <summary><strong>Deploy to GitHub Pages</strong></summary>
 
-<a href="https://github.com/MWDelaney/ZeroPoint/generate">
-  <img src="https://img.shields.io/badge/use%20this-template-blueviolet?logo=github&style=for-the-badge" alt="Use this template">
-</a>
+### Setup:
 
-## Quick Start
+1. [Enable GitHub Pages](https://github.com/Timothy Stegall/ascension-of-christ-lutheran-website/settings/pages) in your repository settings, choose "GitHub Actions" as the source.
+2. [Allow "Read and write permissions" for GitHub Workflows](https://github.com/Timothy Stegall/ascension-of-christ-lutheran-website/settings/actions) in your repository settings for the GitHub Actions workflow to run.
 
-Once you've created your repository from the template, get your local development environment running:
+</details>
+
+<details>
+  <summary><strong>Deploy to Netlify</strong></summary>
+
+### Setup:
+
+[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/Timothy Stegall/ascension-of-christ-lutheran-website/)
+
+
+</details>
+
+</details>
+
+---
+
+## Get to Know ascension-of-christ-lutheran-website
+
+Ready to go deeper? Here's how ascension-of-christ-lutheran-website is laid out:
+
+```sh
+example.com                 # → Root of your project
+├── src/                    # → Source directory
+│   ├── assets/             # → Site assets
+│   │   ├── fonts/
+│   │   ├── images/
+│   │   ├── scripts/
+│   │   ├── styles/
+│   │   ├── views/
+│   │   │   └── layouts/
+│   │   │   └── partials/
+│   │   └── assets.json     # → Shared attributes for files in the assets directory
+│   ├── config/             # → Eleventy configuration
+│   │   ├── build.js        # → Javascript and CSS build and bundler configuration 
+│   │   ├── collections.js  # → Add and configure collections (https://www.11ty.dev/docs/collections/)
+│   │   ├── filters.js      # → Add and configure filters (https://www.11ty.dev/docs/filters/)
+│   │   ├── passthroughs.js # → Add and configure passthroughs (https://www.11ty.dev/docs/copy/)
+│   │   ├── plugins.js      # → Add and configure plugins (https://www.11ty.dev/docs/plugins/)
+│   │   ├── shortcodes.js   # → Add and configure shortcodes (https://www.11ty.dev/docs/shortcodes/)
+│   │   ├── templateLanguages.js   # → Configure custom template languages (https://www.11ty.dev/docs/languages/custom/)
+│   │   ├── watchtargets.js # → Add and configure watch targets (https://www.11ty.dev/docs/watch-serve/)
+│   │   └── config.json     # → Shared attributes for files in the config directory
+│   ├── content             # → A nice, organized, recommended place for all site content
+│   │   └── pages           # → Add "pages" collection items here
+│   └── data                # → Customize site data (https://www.11ty.dev/docs/data/)
+│       ├── navigation.json # → Site navigation configuration
+│       └── site.json       # → Site branding configuration
+├── .eleventy.js            # → Core Eleventy config file
+├── netlify.toml            # → Netlify deployment and plugin configuration (optional)
+├── README.ascension-of-christ-lutheran-website.md     # → Template repository readme
+└── README.md
+```
+
+## Eleventy Configuration
+
+Eleventy configuration is abstracted from the typical `.eleventy.js` file and moved to `/src/config/` for easy organization and configuration of collections, filters, passthroughs, etc.
+
+## Install project dependencies
 
 ```bash
-# Clone your new repository
-git clone https://github.com/your-username/your-repo-name.git
-cd your-repo-name
+npm i
+```
 
-# Install dependencies
-npm install
+## Run the project locally
 
-# Start the development server
+```bash
 npm run dev
 ```
 
-Your site will be available at `http://localhost:8080` with live reload - any changes you make will automatically refresh the browser.
+## Build for staging
 
-### What happens when you run `npm run dev`:
-- Builds your Sass stylesheets and JavaScript
-- Starts Eleventy in watch mode  
-- Launches a local web server with live reload
-- Generates search index with Pagefind
+(The same as production except every page is flagged `noindex`)
 
-### Ready to make changes?
-- Edit content in the `content/` folder
-- Customize styles in `src/assets/styles/`
-- Add images to `src/assets/images/`
-- Modify layouts and templates in `src/assets/views/`
+```bash
+npm run staging
+```
 
-## Deploy Your Site
+## Build for production
 
-Choose your preferred deployment platform:
-
-<details open>
- <summary><strong>GitHub Pages</strong></summary>
-
-### Deploy to GitHub Pages
-
-Deploy your ZeroPoint site for **free** with GitHub Pages:
-
-1. Push your code to a GitHub repository
-2. Go to your repository Settings > Pages
-3. Set Source to "GitHub Actions"
-4. The included `.github/workflows/deploy.yml` will automatically deploy your site
-
- </details>
-
-<details>
- <summary><strong>Deploy to Netlify</strong></summary>
-
-### Deploy to Netlify
-
-Deploy ZeroPoint to [Netlify](https://netlify.com) for **free**!
-
-1. Fork or create a new repository from this template
-2. Connect your repository to Netlify or use the deploy button below:
-
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/MWDelaney/ZeroPoint/)
-
- </details>
-
-<details>
- <summary><strong>Deploy to Cloudflare Pages</strong></summary>
-
-### Deploy to Cloudflare Pages
-
-Deploy ZeroPoint to [Cloudflare Pages](https://pages.cloudflare.com/) for global edge performance:
-
-1. Fork or create a new repository from this template
-2. Connect your repository to Cloudflare Pages
-3. Set build command: `npm run production`
-4. Set output directory: `public`
-
- </details>
-
-## Optional Features
-
-ZeroPoint includes additional features that are disabled by default. Enable them when you need them:
-
-### 📝 Blog System
-
-* Full blog functionality with templates and collections
-* Enable by uncommenting the posts collection in `src/config/collections.js`
-* Includes pagination, SEO, and individual post templates
-
-### 🔍 Full-Text Search
-
-* Client-side search powered by [Pagefind](https://pagefind.app/)
-* Already working at `/search/` - no setup required
-* Lightweight and fast
-
-### 🧩 Component System
-
-* Reusable components via [eleventy-plugin-reusable-components](https://github.com/MWDelaney/eleventy-plugin-reusable-components)
-* Enable by uncommenting the plugin in `src/config/plugins.js`
-
-*See the [CHANGELOG](CHANGELOG.md) for complete details on these features.*
-
-## Project Structure
-
-```text
-example.com                 # → Root of your ZeroPoint project
-├── content/                # → Site content
-│   ├── pages/              # → Site pages (Markdown/HTML)
-│   ├── posts/              # → Blog posts (disabled by default)
-│   ├── 404.njk             # → 404 error page
-│   ├── blog.njk            # → Blog listing page
-│   ├── manifest.njk        # → Web app manifest
-│   ├── redirects.njk       # → Netlify redirects
-│   ├── robots.njk          # → Robots.txt
-│   └── xml_sitemap.njk     # → XML sitemap
-├── src/                    # → Source directory
-│   ├── assets/             # → Site assets
-│   │   ├── fonts/          # → Web fonts
-│   │   ├── images/         # → Images and graphics
-│   │   ├── scripts/        # → JavaScript files
-│   │   │   └── main.js     # → Main JavaScript bundle
-│   │   ├── styles/         # → Stylesheets (SCSS)
-│   │   │   └── styles.scss # → Main stylesheet
-│   │   └── views/          # → Templates and layouts
-│   │       ├── layouts/    # → Page layouts
-│   │       │   └── base.njk # → Base HTML template
-│   │       └── partials/   # → Reusable template parts
-│   ├── config/             # → Eleventy configuration (ES modules)
-│   │   ├── build.js        # → esbuild configuration for assets
-│   │   ├── collections.js  # → Content collections
-│   │   ├── filters.js      # → Template filters
-│   │   ├── passthroughs.js # → File passthroughs
-│   │   ├── plugins.js      # → Eleventy plugins
-│   │   ├── shortcodes.js   # → Template shortcodes
-│   │   ├── templateLanguages.js # → Custom template languages
-│   │   ├── transforms.js   # → Content transforms
-│   │   ├── watchtargets.js # → File watch targets
-│   │   └── config.json     # → Config file settings
-│   └── data/               # → Global data files
-│       ├── env.js          # → Environment variables
-│       └── navigation.json # → Site navigation structure
-├── public/                 # → Built site (generated)
-├── .eleventy.js            # → Core Eleventy config file
-├── README.ZeroPoint.md     # → Template documentation
-└── README.md               # → Project readme
+```bash
+npm run production
 ```

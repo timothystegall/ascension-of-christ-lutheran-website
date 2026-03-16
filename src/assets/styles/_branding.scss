@@ -2,10 +2,13 @@
   /**
     Colors
   */
-  --color-text: #222;
-  --color-background: white;
-  --color-light: silver;
-  --color-primary: #7950f2;
+  --color-text: #2A2F35;
+  --color-background: #262F38;
+  --color-main: #1A2026;
+  --color-light: #9DBBDD;
+  --color-primary: #4A6D91;
+  --color-link: #EAEAEA;
+  --color-accent: #C5A059;
 
   /**
     Spacing and units
@@ -20,8 +23,11 @@
     system,
     -apple-system;
 
+  font-family: 'Lora', sans-serif;
+
+
   @media (prefers-color-scheme: dark) {
-    --color-text: #fff;
-    --color-background: #222;
+    //--color-text: #fff;
+    //--color-background: #222;
   }
 }

@@ -1,46 +1,57 @@
 <nav id="navigation" role="navigation">
-  <span class="navigation-label">Navigation:</span>
+  <a href="/" style="text-decoration: none !important;">
+    <div class="navigation-branding-container">
+      <div class="branding">
+        <img src="/assets/images/logo-no-text.png" alt="Ascension of Christ Lutheran Church Logo" id="navigation-logo">
+      </div>
+      <div class="branding">
+        <h4 id="church-name">Ascension of Christ Lutheran Church & Child Care</h4>
+      </div>
+    </div>
+  </a>
 
-  {%- for item in navigation.items -%}
+  <div class="right-navigation-items">
+    {%- for item in navigation.items -%}
 
-    {#- Set attributes and classes to blank to start -#}
-    {%- set relAttribute = '' -%}
-    {%- set currentAttribute = '' -%}
-    {%- set itemUrl = item.url -%}
-    {%- set target = '' -%}
-    {%- set active = '' -%}
-    {%- set hasSubmenu = '' -%}
-    {%- set dropdown = '' -%}
-    {%- set dropdownToggle = '' -%}
-    {%- set dropdownAttributes = '' -%}
+      {#- Set attributes and classes to blank to start -#}
+      {%- set relAttribute = '' -%}
+      {%- set currentAttribute = '' -%}
+      {%- set itemUrl = item.url -%}
+      {%- set target = '' -%}
+      {%- set active = '' -%}
+      {%- set hasSubmenu = '' -%}
+      {%- set dropdown = '' -%}
+      {%- set dropdownToggle = '' -%}
+      {%- set dropdownAttributes = '' -%}
 
-    {#- Set Attributes -#}
-    {%- if item.rel -%}
-      {%- set relAttribute = ' rel="' + item.rel + '"' -%}
-    {%- endif -%}
+      {#- Set Attributes -#}
+      {%- if item.rel -%}
+        {%- set relAttribute = ' rel="' + item.rel + '"' -%}
+      {%- endif -%}
 
-    {%- if page.url | lower == item.url | lower -%}
-      {%- set currentAttribute = ' aria-current="page"' -%}
-      {%- set active = 'active' -%}
-    {%- endif -%}
+      {%- if page.url | lower == item.url | lower -%}
+        {%- set currentAttribute = ' aria-current="page"' -%}
+        {%- set active = 'active' -%}
+      {%- endif -%}
 
-    {%- if item.external == true -%}
-      {%- set relAttribute = 'noopener noreferrer' -%}
-    {%- endif -%}
+      {%- if item.external == true -%}
+        {%- set relAttribute = 'noopener noreferrer' -%}
+      {%- endif -%}
 
-    {#- {% if item.submenuitems | length %}
-      {% set hasSubmenu = true %}
-      {% set dropdown = 'dropdown' %}
-      {% set dropdownToggle = 'dropdown-toggle' %}
-      {% set dropdownAttributes = 'role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"' %}
-      {% set itemUrl = '#' %}
-    {% endif %} -#}
+      {#- {% if item.submenuitems | length %}
+        {% set hasSubmenu = true %}
+        {% set dropdown = 'dropdown' %}
+        {% set dropdownToggle = 'dropdown-toggle' %}
+        {% set dropdownAttributes = 'role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"' %}
+        {% set itemUrl = '#' %}
+      {% endif %} -#}
 
-    {#- {% if item.external %}
-      {% set target = 'target="_blank"' %}
-    {% endif %} -#}
+      {#- {% if item.external %}
+        {% set target = 'target="_blank"' %}
+      {% endif %} -#}
 
-    {%- include "partials/nav-item.njk" -%}
+      {%- include "partials/nav-item.njk" -%}
 
-  {%- endfor -%}
+    {%- endfor -%}
+  </div>
 </nav>

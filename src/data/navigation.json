@@ -1,19 +1,14 @@
 {
   "items": [
     {
-      "text": "Home",
-      "url": "/",
-      "external": false
-    },
-    {
-      "text": "Search",
-      "url": "/search/",
-      "external": false
-    },
-    {
-      "text": "Get ZeroPoint",
-      "url": "https://getzeropoint.com",
+      "text": "Divine Service Livestream",
+      "url": "https://www.youtube.com/@aoclcms",
       "external": true
+    },
+    {
+      "text": "Contact Us",
+      "url": "/contact",
+      "external": false
     }
   ]
 }

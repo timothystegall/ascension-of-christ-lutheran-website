@@ -28,8 +28,8 @@ export default {
   },
 
   /**
-   * ZeroPoint Reusable Components plugin
-   * https://github.com/MWDelaney/eleventy-plugin-reusable-components
+   * ascension-of-christ-lutheran-website Reusable Components plugin
+   * https://github.com/Timothy Stegall/eleventy-plugin-reusable-components
    */
   // async reusableComponents (eleventyConfig) {
   //   // Add plugin to eleventyConfig

@@ -1,11 +1,10 @@
 {
-  "name": "ZeroPoint",
+  "name": "ascension-of-christ-lutheran-website",
   "version": "2026.1",
-  "description": "",
+  "description": "Ascension of Christ Lutheran Church (LCMS) Website",
   "type": "module",
   "main": "index.html",
   "scripts": {
-    "pre🪐": "node .github/scripts/zeropoint-rebrand.js",
     "🪐": "cross-env ELEVENTY_ENV=development eleventy --serve",
     "🚧": "cross-env ELEVENTY_ENV=staging eleventy",
     "🚀": "cross-env ELEVENTY_ENV=production eleventy",
@@ -19,7 +18,7 @@
     "type": "git",
     "url": "git+project_urlname"
   },
-  "author": "MWDelaney",
+  "author": "Timothy Stegall",
   "license": "MIT",
   "browserslist": [
     "last 2 versions"

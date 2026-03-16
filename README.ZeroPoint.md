@@ -1,10 +1,10 @@
-# ZeroPoint
+# ascension-of-christ-lutheran-website
 
 ## Start building your website
 
 Create and edit your site **right from this readme file!**.
 
-🪐 Or edit your entire site in a web-based editor by [clicking here](https://github.dev/MWDelaney/ZeroPoint/).
+🪐 Or edit your entire site in a web-based editor by [clicking here](https://github.dev/Timothy Stegall/ascension-of-christ-lutheran-website/).
 
 <details>
   <summary><strong>📝 Creating and editing pages</strong></summary>
@@ -15,15 +15,15 @@ Create and edit your site **right from this readme file!**.
 
 Create your site's main content! Pages can be written in HTML or [Markdown](https://www.markdownguide.org/basic-syntax/)!
 
-* [Edit the homepage](https://github.com/MWDelaney/ZeroPoint/edit/main/src/content/pages/index.md)
-* [Create a new page](https://github.com/MWDelaney/ZeroPoint/new/main/?filename=/src/content/pages/&value=---%0Atitle%3A%20Enter%20page%20title%20here%0A---)
+* [Edit the homepage](https://github.com/Timothy Stegall/ascension-of-christ-lutheran-website/edit/main/src/content/pages/index.md)
+* [Create a new page](https://github.com/Timothy Stegall/ascension-of-christ-lutheran-website/new/main/?filename=/src/content/pages/&value=---%0Atitle%3A%20Enter%20page%20title%20here%0A---)
 
 <!--
 
 ---
 #### Posts
 Blog posts
-* [Create a new post](https://github.com/MWDelaney/ZeroPoint/new/main/?filename=/src/content/posts/&value=----%0Atitle%3A%20%22Enter%20post%20title%22%0Adate%3A%20%222025-01-01%0A---)
+* [Create a new post](https://github.com/Timothy Stegall/ascension-of-christ-lutheran-website/new/main/?filename=/src/content/posts/&value=----%0Atitle%3A%20%22Enter%20post%20title%22%0Adate%3A%20%222025-01-01%0A---)
 
 -->
 </details>
@@ -37,14 +37,14 @@ Blog posts
 
 Your site's navigation is how your users will get around! Edit the site's navigation menu in [JSON format](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/JSON)!
 
-* [Edit the navigation](https://github.com/MWDelaney/ZeroPoint/edit/main/src/data/navigation.json)
+* [Edit the navigation](https://github.com/Timothy Stegall/ascension-of-christ-lutheran-website/edit/main/src/data/navigation.json)
 
 ### Styles
 
 Colors, spacing, and fonts, oh my! You can edit your branding and styles here using CSS, SCSS, and CSS variables! 
 
-* [Edit your branding](https://github.com/MWDelaney/zeropoint/edit/main/src/assets/styles/_branding.scss)
-* [Edit your overall styles](https://github.com/MWDelaney/zeropoint/edit/main/src/assets/styles/styles.scss)
+* [Edit your branding](https://github.com/Timothy Stegall/ascension-of-christ-lutheran-website/edit/main/src/assets/styles/_branding.scss)
+* [Edit your overall styles](https://github.com/Timothy Stegall/ascension-of-christ-lutheran-website/edit/main/src/assets/styles/styles.scss)
 
 Learning CSS can be daunting but there are a ton of useful resources on the web. Check out [SmolCSS](https://smolcss.dev) to get started!
 
@@ -52,14 +52,14 @@ Learning CSS can be daunting but there are a ton of useful resources on the web.
 
 **Optional!** Add javascript functionality to your site
 
-* [Add Javascript](https://github.com/MWDelaney/zeropoint/edit/main/src/assets/scripts/main.js)
+* [Add Javascript](https://github.com/Timothy Stegall/ascension-of-christ-lutheran-website/edit/main/src/assets/scripts/main.js)
 
 </details>
 
 <details>
-  <summary><strong>🚀 Deploy ZeroPoint</strong></summary>
+  <summary><strong>🚀 Deploy ascension-of-christ-lutheran-website</strong></summary>
 
-## Deploy ZeroPoint
+## Deploy ascension-of-christ-lutheran-website
 
 Once you set up deployment, any time you commit to your repository's `main` branch, GitHub will build and deploy your site.
 
@@ -68,8 +68,8 @@ Once you set up deployment, any time you commit to your repository's `main` bran
 
 ### Setup:
 
-1. [Enable GitHub Pages](https://github.com/MWDelaney/ZeroPoint/settings/pages) in your repository settings, choose "GitHub Actions" as the source.
-2. [Allow "Read and write permissions" for GitHub Workflows](https://github.com/MWDelaney/ZeroPoint/settings/actions) in your repository settings for the GitHub Actions workflow to run.
+1. [Enable GitHub Pages](https://github.com/Timothy Stegall/ascension-of-christ-lutheran-website/settings/pages) in your repository settings, choose "GitHub Actions" as the source.
+2. [Allow "Read and write permissions" for GitHub Workflows](https://github.com/Timothy Stegall/ascension-of-christ-lutheran-website/settings/actions) in your repository settings for the GitHub Actions workflow to run.
 
 </details>
 
@@ -78,7 +78,7 @@ Once you set up deployment, any time you commit to your repository's `main` bran
 
 ### Setup:
 
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/MWDelaney/ZeroPoint/)
+[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/Timothy Stegall/ascension-of-christ-lutheran-website/)
 
 
 </details>
@@ -87,9 +87,9 @@ Once you set up deployment, any time you commit to your repository's `main` bran
 
 ---
 
-## Get to Know ZeroPoint
+## Get to Know ascension-of-christ-lutheran-website
 
-Ready to go deeper? Here's how ZeroPoint is laid out:
+Ready to go deeper? Here's how ascension-of-christ-lutheran-website is laid out:
 
 ```sh
 example.com                 # → Root of your project
@@ -120,7 +120,7 @@ example.com                 # → Root of your project
 │       └── site.json       # → Site branding configuration
 ├── .eleventy.js            # → Core Eleventy config file
 ├── netlify.toml            # → Netlify deployment and plugin configuration (optional)
-├── README.ZeroPoint.md     # → Template repository readme
+├── README.ascension-of-christ-lutheran-website.md     # → Template repository readme
 └── README.md
 ```
 

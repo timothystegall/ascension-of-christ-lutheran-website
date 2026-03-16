@@ -1,10 +1,10 @@
-name: 🧹 Remove ZeroPoint branding
+name: 🧹 Remove ascension-of-christ-lutheran-website branding
 on: workflow_dispatch
 
 jobs:
   rebrand:
     runs-on: ubuntu-latest
-    if: github.repository != 'MWDelaney/ZeroPoint'
+    if: github.repository != 'Timothy Stegall/ascension-of-christ-lutheran-website'
     steps:
 
       - name: 📥 Checkout the repository
@@ -16,13 +16,13 @@ jobs:
           node-version-file: '.nvmrc'
 
       - name: 🏷️ Run rebranding script
-        run: node .github/scripts/zeropoint-rebrand.js
+        run: node .github/scripts/ascension-of-christ-lutheran-website-rebrand.js
         env:
           CI: 'true' # This tells the script to run in automated mode
 
       - name: 🚀 Commit changes and delete this workflow
         uses: EndBug/add-and-commit@v9
         with:
-          remove: '["./.github/workflows/zeropoint-rebrand.yml"]'
+          remove: '["./.github/workflows/ascension-of-christ-lutheran-website-rebrand.yml"]'
           message: "Up to zero 🪐"
           tag: 'v0.0.1 --force'
