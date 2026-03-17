@@ -29,11 +29,12 @@ permalink: /church/
     }
 
     .church-image {
-        flex: 1; /* Makes all three equal width */
+        flex: 1 1 0; /* Grow, Shrink, and initial Basis of 0 */
+        min-width: 0; /* Critical for Firefox flexbox bugs with images */
         width: 100%;
         height: auto;
-        aspect-ratio: 4 / 5; /* Slightly taller for a 'panel' look, or use 1/1 for square */
-        object-fit: cover; /* Prevents stretching */
+        aspect-ratio: 4 / 5;
+        object-fit: cover;
         border-radius: 8px;
         filter: brightness(0.85);
         border: 2px solid #C5A059;
