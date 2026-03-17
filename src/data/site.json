@@ -1,6 +1,8 @@
 {
-  "name": "ascension-of-christ-lutheran-website",
+  "name": "Ascension of Christ Lutheran Church & Child Care - Beverly Hills, Michigan",
   "description": "",
   "type": "website",
-  "url": "https://getascension-of-christ-lutheran-website.com"
+  "url": "https://getascension-of-christ-lutheran-website.com",
+  "github_repo": "timothystegall/ascension-of-christ-lutheran-website",
+  "github_branch": "main"
 }

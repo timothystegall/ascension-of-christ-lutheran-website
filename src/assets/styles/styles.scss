@@ -15,6 +15,11 @@ body {
 
 a {
   color: var(--color-accent);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
 }
 
 #main {
@@ -236,4 +241,9 @@ label {
 
 .grid-item:hover .overlay-text {
   opacity: 1; /* Fades the text in */
+}
+
+.church {
+  color: var(--color-link);
+  padding: 25px;
 }

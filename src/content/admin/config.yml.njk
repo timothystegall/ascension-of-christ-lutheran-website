@@ -1,0 +1,104 @@
+---
+eleventyExcludeFromCollections: true
+permalink: "/admin/config.yml"
+layout: false
+templateEngineOverride: "njk"
+---
+
+# Branding and configuration
+logo_url: "/assets/images/favicon.svg"
+site_url: "{{ site.url }}"
+locale: "en"
+
+# Backend configuration for Decap CMS/Sveltia CMS
+backend:
+  name: github
+  branch: "{{ site.github_branch }}"
+  repo: "{{ site.github_repo }}"
+
+# Where uploaded media files are stored
+media_folder: "src/assets/images"
+public_folder: "/assets/images"
+
+# Collections define editable content types in the CMS
+
+# Pages
+collections:
+  - name: "pages"
+    label: "Pages"
+    editor:
+      preview: false
+    folder: "src/content/pages"
+    create: true
+    extension: "md"
+    format: "frontmatter"
+    nested:
+      depth: 100 # max depth to show in the collection tree
+      summary: '{{title}}' # optional summary for a tree node, defaults to the inferred title field
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Permalink Override (Default: '/your-title/')", name: "permalink", widget: "string", required: false }
+      - { label: "Content", name: "body", widget: "markdown" }
+
+  # Posts (uncomment if your site has blog posts)
+  # - name: "posts"
+  #   label: "Blog Posts"
+  #   editor:
+  #     preview: true
+  #   folder: "src/content/posts"
+  #   create: true
+  #   extension: "md"
+  #   format: "frontmatter"
+  #   sortable_fields:
+  #     - { field: "date", direction: "desc" }
+  #   fields:
+  #     - { label: "Title", name: "title", widget: "string" }
+  #     - { label: "Publish Date", name: "date", widget: "datetime" }
+  #     - { label: "Excerpt", name: "excerpt", widget: "text", required: false }
+  #     - { label: "Content", name: "body", widget: "markdown" }
+
+  # Global settings and navigation
+  - name: "settings"
+    label: "Settings"
+    editor:
+      preview: false
+    files:
+      # Global site settings (site name, description, type)
+      - label: "Global Settings"
+        name: "site"
+        file: "src/data/site.json"
+        fields:
+          - { label: "Name", name: "name", widget: "string" }
+          - { label: "Description", name: "description", widget: "text" }
+          - { label: "Type", name: "type", widget: "string" }
+      # Navigation settings (menu items and structure)
+      - label: "Navigation"
+        name: "nav"
+        file: "src/data/navigation.json"
+        fields:
+          - label: "Items"
+            name: "items"
+            widget: "list"
+            fields:
+              - label: "Text"
+                name: "text"
+                widget: "string"
+              - label: "URL"
+                name: "url"
+                widget: "string"
+              - label: "External"
+                name: "external"
+                widget: "boolean"
+              - label: "Sub Items"
+                name: "subitems"
+                widget: "list"
+                fields:
+                  - label: "Text"
+                    name: "text"
+                    widget: "string"
+                  - label: "URL"
+                    name: "url"
+                    widget: "string"
+                  - label: "External"
+                    name: "external"
+                    widget: "boolean"
