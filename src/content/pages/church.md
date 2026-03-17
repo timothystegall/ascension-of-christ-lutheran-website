@@ -101,7 +101,8 @@ permalink: /church/
 
         <div class="image-triptych">
             <img src="/assets/images/nave.jpg" alt="The Nave" class="church-image">
-            <img src="/assets/images/crucifix.jpg" alt="The Altar" class="church-image">
+            <img src="/assets/images/church-outside.jpg" alt="The Church" class="church-image">
+            <img src="/assets/images/crucifix.jpg" alt="The Crucifix" class="church-image">
             <img src="/assets/images/organ.jpg" alt="The Baptismal Font" class="church-image">
         </div>
 
