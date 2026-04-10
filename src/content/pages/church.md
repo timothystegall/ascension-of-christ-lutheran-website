@@ -81,15 +81,67 @@ permalink: /church/
         font-style: normal;
     }
 
-    .what-we-believe {
+    .section {
         display: flex;
         flex-direction: row;
         justify-content: center;
         width: 50%;
         max-width: 1300px;
     }
+
+    /* 1. The Wrapper: Centers everything and keeps the line short */
+    .nav-wrapper {
+        width: fit-content;
+        margin: 30px auto; /* Adds space above/below the nav bar */
+        text-align: center;
+    }
+
+    /* 2. The Flex Container: Handles the spacing of the links */
+    .flex-nav-container {
+        display: flex;
+        gap: 30px;          /* Increases space between the words */
+        padding-bottom: 12px; /* Space between text and the line */
+    }
+
+    /* 3. The Links: Making them look more "formal" */
+    .nav-link {
+        text-decoration: none;
+        color: #e0e0e0;      /* Soft white */
+        font-size: 1.25rem;  /* Slightly smaller but clearer */
+        text-transform: uppercase; /* Dignified, liturgical look */
+        letter-spacing: 2px; /* Increases readability and "elegance" */
+        font-weight: 500;
+        transition: color 0.3s ease;
+    }
+
+    .nav-link:hover {
+        color: var(--color-accent);
+    }
+
+    .nav-link.active {
+        color: var(--color-accent);
+    }
+
+    /* 4. The HR: Styled to match your church's gold accents */
+    .nav-divider {
+        border: 0;
+        height: 1px;
+        /* This creates a line that fades out at the edges for a high-end look */
+        background-image: linear-gradient(to right, transparent, #c5a059, transparent);
+        margin: 0;
+        opacity: 0.6;
+    }
 </style>
 
+<div class="nav-wrapper">
+    <div class="flex-nav-container">
+        <a href="/church" class="nav-link active">Church</a>
+        <a href="/worship" class="nav-link">Worship</a>
+        <a href="/staff" class="nav-link">Staff</a>
+        <a href="/calendar" class="nav-link">Calendar</a>
+    </div>
+    <hr class="nav-divider">
+</div>
 <div class="church">
     <div class="church-content">
         <div>
@@ -115,7 +167,11 @@ permalink: /church/
             </div>
         </a>
 
-        <div class="what-we-believe">
+        <div class="section" style="text-align: left; margin-top: 25px;">
+            <p style="font-size: 1.25rem;">At Ascension of Christ, you will find a friendly and welcoming community gathered around the objective promises of Christ in Word & Sacrament. We are a parish of the baptized, bound together by a shared confession of the infallible and inerrant Holy Scriptures, the Lutheran Confessions, and a love of the historic liturgy: where we are shown our sins by the Law, and comforted with the promise of the Gospel: Christ crucified for our sins.</p>
+        </div>
+
+        <div class="section">
             <div style="text-align: left; padding-top: 25px;">
                 <h3>What We Believe, Teach, and Confess:</h3>
                 <ul>
@@ -130,10 +186,9 @@ permalink: /church/
                     <li>The canonical books of the Old and New Testaments are the true, inspired, inerrant Word of God.</li>
                     <li>That the Unaltered Augsburg Confession of 1530 (of which the above items are a summary of the first thirteen articles) is a true and faithful exposition of Holy Scripture.</li>
                     <li>The rest of the 1580 Book of Concord is, like the Augsburg Confession, a true and faithful exposition of Holy Scripture, and we subscribe unreservedly to it.</li>
-                    <li>For a simple understanding of our doctrine, we invite you to read the <a href="https://catechism.cph.org/" target="_blank">Small Catechism</a> or to read about what congregations of The Lutheran Church—Missouri Synod (LCMS) <a href="https://www.lcms.org/about/beliefs" target="_blank">believe and practice</a>.</li>
+                    <li>For a simple understanding of our doctrine, we invite you to read the <a href="https://catechism.cph.org/" target="_blank">Small Catechism</a> or to read about what congregations of The Lutheran Church—Missouri Synod (LCMS) <a href="https://www.lcms.org/about/beliefs" target="_blank">believe, and practice</a>.</li>
                 </ul>
             </div>
-        </div>
         </div>
     </div>
 </div>
