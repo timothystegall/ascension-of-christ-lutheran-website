@@ -13,9 +13,9 @@
     {#- Page title, meta tags, and other head elements -#}
     {%- include "partials/meta.njk" -%}
   </head>
-  <body>
+  <body class="bg-main text-text min-h-screen">
     {#- Skip to content link -#}
-    <a class="visually-hidden" href="#main">Skip to content</a>
+    <a class="sr-only" href="#main">Skip to content</a>
 
     {#- Site header with navigation -#}
     <header>
@@ -23,26 +23,25 @@
     </header>
 
     {#- Main content -#}
-    <main id="main" tabindex="-1" data-pagefind-body>
+    <main id="main" tabindex="-1" data-pagefind-body class="bg-background p-[25px]">
       {#- Content from the page or post -#}
       {{ content | safe }}
     </main>
 
     {#- Site footer with copyright -#}
-    <footer id="footer">
-      {#-{%- year -%} &copy; {{ site.name }}-#}
-      <div id="footerContainer">
-        <div class="footerItem">
-          <h3>Church</h3>
+    <footer class="px-[25px] pb-[25px] mb-[50px] bg-[#1A2026] border-t border-light text-center">
+      <div class="flex flex-row justify-around max-w-full mx-auto mt-[15px]">
+        <div class="text-link h-[200px] mb-[25px]">
+          <h3 class="mb-2">Church</h3>
           <div>
             <div>9:00am — Bible Study</div>
             <div>10:15am — Divine Service</div>
-            <div style="margin-top: 15px;">Wednesdays: <br/> <i>(During Advent & Lent)</i><br/>12:00pm — Matins<br/>7:00pm — Vespers</div>
-            <div style="margin-top: 15px;">Private Confession & Absolution is available <br/>with Pastor by appointment.</div>
+            <div class="mt-[15px]">Wednesdays: <br/> <i>(During Advent & Lent)</i><br/>12:00pm — Matins<br/>7:00pm — Vespers</div>
+            <div class="mt-[15px]">Private Confession & Absolution is available <br/>with Pastor by appointment.</div>
           </div>
         </div>
-        <div class="footerItem">
-          <h3>Office & Child Care</h3>
+        <div class="text-link h-[200px] mb-[25px]">
+          <h3 class="mb-2">Office & Child Care</h3>
           <div>Child Care Hours: 7am — 6pm, Mon — Fri</div>
           <div>Church Office:</div>
           <div>
@@ -55,10 +54,10 @@
             <div>Saturday,	Closed</div>
           </div>
         </div>
-        <div class="footerItem">
-          <h3>Address</h3>
+        <div class="text-link h-[200px] mb-[25px]">
+          <h3 class="mb-2">Address</h3>
           <div>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2940.1335593795966!2d-83.21727302349028!3d42.531217524270446!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8824c7b6cc71f3ef%3A0xfd3e4ae3fd68d2fb!2sAscension%20of%20Christ%20Lutheran%20Church%20%26%20Child%20Care!5e0!3m2!1sen!2sus!4v1773624524518!5m2!1sen!2sus" width="250" height="200" style="border:0;" allowfullscreen="" class="map" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2940.1335593795966!2d-83.21727302349028!3d42.531217524270446!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8824c7b6cc71f3ef%3A0xfd3e4ae3fd68d2fb!2sAscension%20of%20Christ%20Lutheran%20Church%20%26%20Child%20Care!5e0!3m2!1sen!2sus!4v1773624524518!5m2!1sen!2sus" width="250" height="200" style="border:0;" allowfullscreen="" class="border border-transparent rounded-[8%] mb-[5px]" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
           </div>
           <div>
             <a href="https://maps.app.goo.gl/B4REv35mR9xof49B8" target="_blank">

@@ -1,0 +1,52 @@
+@import "tailwindcss";
+
+/* Scan template files for utility class names */
+@source "../../content/**/*.md";
+@source "../../content/**/*.njk";
+@source "../views/**/*.njk";
+@source "../views/**/*.html";
+
+@theme {
+  /* Brand Colors */
+  --color-main: #1A2026;
+  --color-background: #262F38;
+  --color-text: #2A2F35;
+  --color-light: #9DBBDD;
+  --color-primary: #4A6D91;
+  --color-link: #EAEAEA;
+  --color-accent: #C5A059;
+  --color-dark-bg: #202830;
+  --color-gold-dim: #7d663e;
+  --color-accent-blue: #a1b5cb;
+  --color-border-dim: #4a5568;
+
+  /* Typography */
+  --font-sans: 'Lora', sans-serif;
+  --font-serif: Georgia, serif;
+  --font-display: 'Playfair Display', serif;
+}
+
+/* Aliases so inline styles in content pages continue to work */
+:root {
+  --gold: var(--color-accent);
+  --accent-blue: var(--color-accent-blue);
+  --gold-dim: var(--color-gold-dim);
+  --border-dim: var(--color-border-dim);
+  --text-light: var(--color-link);
+  --bg-dark: var(--color-dark-bg);
+}
+
+@layer base {
+  a {
+    color: var(--color-accent);
+    text-decoration: none;
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
+
+  img {
+    height: auto;
+  }
+}

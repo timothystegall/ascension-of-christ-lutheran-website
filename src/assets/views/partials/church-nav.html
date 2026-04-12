@@ -1,55 +1,9 @@
-<style>
-  
-    /* 1. The Wrapper: Centers everything and keeps the line short */
-    .nav-wrapper {
-        width: fit-content;
-        margin: 30px auto; /* Adds space above/below the nav bar */
-        text-align: center;
-    }
-
-    /* 2. The Flex Container: Handles the spacing of the links */
-    .flex-nav-container {
-        display: flex;
-        gap: 30px;          /* Increases space between the words */
-        padding-bottom: 12px; /* Space between text and the line */
-    }
-
-    /* 3. The Links: Making them look more "formal" */
-    .nav-link {
-        text-decoration: none;
-        color: #e0e0e0;      /* Soft white */
-        font-size: 1.25rem;  /* Slightly smaller but clearer */
-        text-transform: uppercase; /* Dignified, liturgical look */
-        letter-spacing: 2px; /* Increases readability and "elegance" */
-        font-weight: 500;
-        transition: color 0.3s ease;
-    }
-
-    .nav-link:hover {
-        color: var(--color-accent);
-    }
-
-    .nav-link.active {
-        color: var(--color-accent);
-    }
-
-    /* 4. The HR: Styled to match your church's gold accents */
-    .nav-divider {
-        border: 0;
-        height: 1px;
-        /* This creates a line that fades out at the edges for a high-end look */
-        background-image: linear-gradient(to right, transparent, #c5a059, transparent);
-        margin: 0;
-        opacity: 0.6;
-    }
-</style>
-
-<div class="nav-wrapper">
-    <div class="flex-nav-container">
-        <a href="/church/" class="nav-link {% if '/church' in page.url %}active{% endif %}">Church</a>
-    <a href="/worship/" class="nav-link {% if '/worship' in page.url %}active{% endif %}">Worship</a>
-    <a href="/staff/" class="nav-link {% if '/staff' in page.url %}active{% endif %}">Staff</a>
-    <a href="/calendar/" class="nav-link {% if '/calendar' in page.url %}active{% endif %}">Calendar</a>
+<div class="w-fit mx-auto my-[30px] text-center">
+    <div class="flex gap-[30px] pb-[12px]">
+        <a href="/church/" class="hover:no-underline text-[1.25rem] uppercase tracking-[2px] font-medium transition-colors duration-300 {% if '/church' in page.url %}text-accent{% else %}text-link hover:text-accent{% endif %}">Church</a>
+        <a href="/worship/" class="hover:no-underline text-[1.25rem] uppercase tracking-[2px] font-medium transition-colors duration-300 {% if '/worship' in page.url %}text-accent{% else %}text-link hover:text-accent{% endif %}">Worship</a>
+        <a href="/staff/" class="hover:no-underline text-[1.25rem] uppercase tracking-[2px] font-medium transition-colors duration-300 {% if '/staff' in page.url %}text-accent{% else %}text-link hover:text-accent{% endif %}">Staff</a>
+        <a href="/calendar/" class="hover:no-underline text-[1.25rem] uppercase tracking-[2px] font-medium transition-colors duration-300 {% if '/calendar' in page.url %}text-accent{% else %}text-link hover:text-accent{% endif %}">Calendar</a>
     </div>
-    <hr class="nav-divider">
+    <hr class="border-0 h-px bg-gradient-to-r from-transparent via-[#c5a059] to-transparent opacity-60 m-0">
 </div>

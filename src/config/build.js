@@ -1,24 +1,31 @@
-// .eleventy.js
 import esbuild from 'esbuild';
-import { sassPlugin } from 'esbuild-sass-plugin';
 import { execSync } from 'child_process';
+import { readFileSync, writeFileSync, mkdirSync } from 'fs';
+import postcss from 'postcss';
+import tailwindcss from '@tailwindcss/postcss';
 
 export default async function(config) {
 
   /**
-   * Build Sass and JavaScript assets with esbuild
+   * Build CSS with Tailwind via PostCSS and JavaScript with esbuild
    */
-  config.on('afterBuild', () => {
-    return esbuild.build({
-      entryPoints: ['src/assets/styles/styles.scss', 'src/assets/scripts/main.js'],
-      outdir: 'public/assets',
+  config.on('afterBuild', async () => {
+    // Process CSS with Tailwind
+    const cssInput = readFileSync('src/assets/styles/styles.css', 'utf8');
+    const result = await postcss([tailwindcss]).process(cssInput, {
+      from: 'src/assets/styles/styles.css',
+      to: 'public/assets/styles/styles.css',
+    });
+    mkdirSync('public/assets/styles', { recursive: true });
+    writeFileSync('public/assets/styles/styles.css', result.css);
+
+    // Bundle JavaScript
+    await esbuild.build({
+      entryPoints: ['src/assets/scripts/main.js'],
+      outfile: 'public/assets/scripts/main.js',
       bundle: true,
       minify: false,
       sourcemap: false,
-      plugins: [sassPlugin({
-        quietDeps: true,
-        loadPaths: ['node_modules'],
-      })],
     });
   });
 
@@ -29,4 +36,4 @@ export default async function(config) {
     const outputDir = dir.output;
     execSync(`./node_modules/.bin/pagefind --site ${outputDir} --output-path ${outputDir}/assets/search --glob "**/*.html"`, { encoding: 'utf-8' });
   });
-};
+}
