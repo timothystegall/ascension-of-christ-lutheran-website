@@ -1,6 +1,7 @@
 ---
-title:
+title: Staff
 permalink: /staff/
+description: Meet the pastoral staff and musicians of Ascension of Christ Lutheran Church in Beverly Hills, MI, committed to the Lutheran Confessions and the liturgical life of the parish.
 ---
 
 {% include "partials/church-nav.html" %}

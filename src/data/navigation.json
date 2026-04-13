@@ -6,9 +6,14 @@
       "external": true
     },
     {
+      "text": "Giving",
+      "url": "https://www.youtube.com/@aoclcms",
+      "external": true
+    },
+    {
       "text": "Contact Us",
-      "url": "/contact",
-      "external": false
+      "url": "https://docs.google.com/forms/",
+      "external": true
     }
   ]
 }

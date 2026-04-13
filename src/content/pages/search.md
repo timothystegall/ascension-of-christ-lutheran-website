@@ -1,5 +1,5 @@
 ---
-title: Search Results 🔍
+title: Search Results
 permalink: /search/
 ---
 This page displays search results powered by [Pagefind](https://pagefind.app/).

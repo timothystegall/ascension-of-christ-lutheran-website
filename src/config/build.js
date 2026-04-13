@@ -21,8 +21,11 @@ export default async function(config) {
 
     // Bundle JavaScript
     await esbuild.build({
-      entryPoints: ['src/assets/scripts/main.js'],
-      outfile: 'public/assets/scripts/main.js',
+      entryPoints: {
+        'main': 'src/assets/scripts/main.js',
+        'lectionary': 'src/assets/scripts/lectionary.js',
+      },
+      outdir: 'public/assets/scripts',
       bundle: true,
       minify: false,
       sourcemap: false,

@@ -26,5 +26,11 @@ export default {
     let config = { 'src/assets/images': 'assets/images' }
 
     eleventyConfig.addPassthroughCopy(config);
+  },
+
+  documents: async function (eleventyConfig) {
+    const config = { 'src/assets/documents': 'assets/documents' };
+
+    eleventyConfig.addPassthroughCopy(config);
   }
 };

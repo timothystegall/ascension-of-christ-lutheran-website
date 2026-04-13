@@ -8,7 +8,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 {#- Canonical URL -#}
-<link rel="canonical" href="{{ page.url }}" />
+<link rel="canonical" href="{{ site.url }}{{ page.url | url }}" />
 
 {#- Meta Description -#}
 <meta name="description" content="{{ site.description or description | escape }}" />
@@ -22,6 +22,51 @@
 
 {#- Open Graph Meta Tags for Social Media -#}
 <meta property="og:title" content="{{ title | safe }} - {{ site.name | safe }}" />
-<meta property="og:description" content="{{ description | escape }}" />
+<meta property="og:description" content="{{ description or site.description | escape }}" />
 <meta property="og:type" content="{{ site.type or type }}" />
-<meta property="og:url" content="{{ page.url }}" />
+<meta property="og:url" content="{{ site.url }}{{ page.url | url }}" />
+<meta property="og:image" content="{{ site.url }}/assets/images/church-outside.jpg" />
+<meta property="og:site_name" content="{{ site.name | safe }}" />
+
+{#- JSON-LD Structured Data -#}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Church",
+  "name": "Ascension of Christ Lutheran Church & Child Care",
+  "url": "{{ site.url }}",
+  "telephone": "+1-248-644-8890",
+  "email": "info@ascensionofchrist.org",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "16935 W 14 Mile Rd",
+    "addressLocality": "Beverly Hills",
+    "addressRegion": "MI",
+    "postalCode": "48025",
+    "addressCountry": "US"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 42.5312,
+    "longitude": -83.2150
+  },
+  "openingHoursSpecification": [
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": "Sunday",
+      "opens": "07:00",
+      "closes": "13:00"
+    },
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
+      "opens": "07:00",
+      "closes": "18:00"
+    }
+  ],
+  "sameAs": [
+    "https://www.facebook.com/AscensionofChrist",
+    "https://x.com/AoC_Lutheran"
+  ]
+}
+</script>

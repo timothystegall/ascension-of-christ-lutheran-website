@@ -5,7 +5,10 @@
     <link rel="stylesheet" href="{{ '/assets/styles/styles.css' | url }}"/>
 
     {#- Favicon -#}
-    <link rel="icon" type="image/svg+xml" href="/assets/images/favicon.svg">
+    <link rel="icon" type="image/png" href="/assets/images/logo-no-text.png">
+
+    {#- Web App Manifest -#}
+    <link rel="manifest" href="/manifest.webmanifest">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
@@ -32,34 +35,41 @@
     <footer class="px-[25px] pb-[25px] mb-[50px] bg-[#1A2026] border-t border-light text-center">
       <div class="flex flex-row justify-around max-w-full mx-auto mt-[15px]">
         <div class="text-link h-[200px] mb-[25px]">
-          <h3 class="mb-2">Church</h3>
+          <h3 class="mb-3">Church</h3>
           <div>
-            <div>9:00am — Bible Study</div>
-            <div>10:15am — Divine Service</div>
-            <div class="mt-[15px]">Wednesdays: <br/> <i>(During Advent & Lent)</i><br/>12:00pm — Matins<br/>7:00pm — Vespers</div>
+            <div>9:00AM — Bible Study</div>
+            <div>10:15AM — Divine Service</div>
+            <div class="mt-[15px]">Wednesdays: <br/> <i>(During Advent & Lent)</i><br/>12:00PM — Matins<br/>7:00PM — Vespers</div>
             <div class="mt-[15px]">Private Confession & Absolution is available <br/>with Pastor by appointment.</div>
           </div>
         </div>
         <div class="text-link h-[200px] mb-[25px]">
-          <h3 class="mb-2">Office & Child Care</h3>
-          <div>Child Care Hours: 7am — 6pm, Mon — Fri</div>
-          <div>Church Office:</div>
-          <div>
-            <div>Sunday, 7am — 1pm</div>
-            <div>Monday,	7am — 6pm</div>
-            <div>Tuesday,	7am — 6pm</div>
-            <div>Wednesday,	7am — 6pm</div>
-            <div>Thursday,	7am — 6pm</div>
-            <div>Friday,	7am — 6pm</div>
-            <div>Saturday,	Closed</div>
+          <h3 class="mb-3">Office & Child Care</h3>
+          <div>Child Care: 7AM — 6PM, Mon — Fri</div>
+          <div class="mt-2">Parish Office:</div>
+          <div class="grid grid-cols-[auto_1fr] gap-x-3 mt-1 ml-8">
+            <span>Sunday</span><span>7AM — 1PM</span>
+            <span>Mon — Fri</span><span>7AM — 6PM</span>
+            <span>Saturday</span><span>Closed</span>
+          </div>
+          <div class="mt-2">
+            <p class="mb-1">Phone: <a href="tel:248-644-8890">248-644-8890</a><p>
+            <p>Email: <a href="mailto:info@ascensionofchrist.org">info@ascensionofchrist.org</a></p>
+            <p class="mt-2">
+              <a class="mr-1" href="https://www.facebook.com/AscensionofChrist" target="_blank">
+                Facebook
+              </a> / <a class="ml-1" href="https://x.com/AoC_Lutheran" target="_blank">
+                Twitter
+              </a>
+            </p>
           </div>
         </div>
         <div class="text-link h-[200px] mb-[25px]">
           <h3 class="mb-2">Address</h3>
-          <div>
+          <div class="flex justify-center">
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2940.1335593795966!2d-83.21727302349028!3d42.531217524270446!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8824c7b6cc71f3ef%3A0xfd3e4ae3fd68d2fb!2sAscension%20of%20Christ%20Lutheran%20Church%20%26%20Child%20Care!5e0!3m2!1sen!2sus!4v1773624524518!5m2!1sen!2sus" width="250" height="200" style="border:0;" allowfullscreen="" class="border border-transparent rounded-[8%] mb-[5px]" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
           </div>
-          <div>
+          <div class="mt-1">
             <a href="https://maps.app.goo.gl/B4REv35mR9xof49B8" target="_blank">
               16935 W 14 Mile Rd, Beverly Hills, MI 48025
             </a>
