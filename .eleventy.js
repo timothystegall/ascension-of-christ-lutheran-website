@@ -13,7 +13,6 @@
  */
 
 // Node.js imports
-import { EleventyHtmlBasePlugin } from "@11ty/eleventy";
 import { readFileSync } from "fs";
 import { dirname, join } from "path";
 import { fileURLToPath } from "url";
@@ -115,7 +114,6 @@ export default async function (eleventyConfig) {
 	build(eleventyConfig);
 	eleventyConfig.setServerOptions({ showAllHosts: false });
 	eleventyConfig.setQuietMode(true);
-	eleventyConfig.addPlugin(EleventyHtmlBasePlugin);
 	return {
 		pathPrefix: "/ascension-of-christ-lutheran-website/",
 		dir: {
