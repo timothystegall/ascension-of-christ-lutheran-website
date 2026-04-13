@@ -16,7 +16,6 @@
 import { readFileSync } from "fs";
 import { dirname, join } from "path";
 import { fileURLToPath } from "url";
-import { EleventyHtmlBasePlugin } from "@11ty/eleventy";
 
 // Local imports
 import build from "./src/config/build.js";
@@ -115,9 +114,9 @@ export default async function (eleventyConfig) {
 	build(eleventyConfig);
 	eleventyConfig.setServerOptions({ showAllHosts: false });
 	eleventyConfig.setQuietMode(true);
-	eleventyConfig.addPlugin(EleventyHtmlBasePlugin);
 
 	return {
+		pathPrefix: "ascension-of-christ-lutheran-website",
 		dir: {
 			input: "src",
 			output: "public",
