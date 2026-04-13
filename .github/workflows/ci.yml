@@ -14,28 +14,16 @@ jobs:
       - name: 📥 Checkout repository
         uses: actions/checkout@v4
 
-      - name: 📦 Setup Node.js
-        uses: actions/setup-node@v4
+      - name: 📦 Setup Biome
+        uses: biomejs/setup-biome@v2
         with:
-          node-version-file: '.nvmrc'
-          cache: 'npm'
+          version: latest
 
-      - name: 🔧 Install dependencies
-        run: npm ci
-
-      - name: 🔍 ESLint Annotate
-        uses: reviewdog/action-eslint@v1
+      - name: 🔍 Biome Lint and Annotate
+        uses: biomejs/biome-action@v3
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          eslint_flags: '.'
-          tool_name: 'ESLint'
-          fail_level: 'error'
-
-      - name: 🎨 Stylelint Annotate
-        uses: reviewdog/action-stylelint@v1
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          stylelint_input: 'src/**/*.{css,scss}'
+          repo-token: ${{ secrets.GITHUB_TOKEN }}
+          action-name: 'Biome'
 
   build:
     name: 🏗️ Build Test
