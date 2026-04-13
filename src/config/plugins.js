@@ -32,9 +32,8 @@ export default {
 		eleventyConfig.addPassthroughCopy({ "src/assets/styles": "css" });
 	},
 	async jekyll(eleventyConfig) {
-        // Crucial: Stops GitHub from ignoring the CSS folder
-        eleventyConfig.addPassthroughCopy(".nojekyll");
-    }
+		eleventyConfig.addPassthroughCopy(".nojekyll");
+	},
 	/**
 	 * ascension-of-christ-lutheran-website Reusable Components plugin
 	 * https://github.com/Timothy Stegall/eleventy-plugin-reusable-components
