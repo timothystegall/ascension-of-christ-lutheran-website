@@ -105,9 +105,9 @@ export default async function (eleventyConfig) {
 	// Execute all task configurations
 	for (const task of loadedTasks) {
 		const taskNames = Object.keys(task.config);
-		taskNames.forEach((taskName) => {
-			task.config[taskName](eleventyConfig);
-		});
+		for (const taskName of taskNames) {
+			await task.config[taskName](eleventyConfig);
+		}
 	}
 
 	displayConfigTree(loadedTasks, siteName, author);
@@ -116,7 +116,7 @@ export default async function (eleventyConfig) {
 	eleventyConfig.setQuietMode(true);
 
 	return {
-		pathPrefix: "/ascension-of-christ-lutheran-website/",
+		pathPrefix: "/",
 		dir: {
 			input: "src",
 			output: "public",
