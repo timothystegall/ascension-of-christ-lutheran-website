@@ -1,6 +1,6 @@
 ---
 title: Visiting Ascension of Christ
-permalink: /visitor/
+permalink: /visitors/
 description: Planning your first visit to Ascension of Christ Lutheran Church in Beverly Hills, MI? Learn what to expect at the Divine Service, our location, parking, and answers to FAQ questions.
 priority: 0.8
 changefreq: monthly
@@ -27,7 +27,7 @@ changefreq: monthly
     <h2 class="text-light uppercase text-[1.2rem] tracking-[2px] mt-0">What Should I Expect?</h2>
     <p class="mt-[0.25rem]">Our worship is the historic <strong>Divine Service</strong> — a liturgical service rooted in Scripture and the Lutheran Confessions, with spoken and chanted prayers, Scripture readings, a sermon, and the Lord's Supper. It follows <strong>Setting Three</strong> from the <em>Lutheran Service Book (LSB)</em>.</p>
     <p class="mt-3">The service lasts approximately <strong>75–90 minutes</strong>. Bulletins are provided at the door with the order of service, so you can follow along even if you are unfamiliar with the liturgy. Hymnals are also in the pews.</p>
-    <p class="mt-3">For a detailed walkthrough of the service, see our <a href="/worship/">Worship</a> page.</p>
+    <p class="mt-3">For a detailed walkthrough of the service, see our <a href="{{ '/worship/' | url }}">Worship</a> page.</p>
   </div>
 
   <div class="border-l-[3px] border-accent bg-[rgba(255,255,255,0.02)] py-[25px] px-[40px] mb-[30px]">
@@ -45,7 +45,7 @@ changefreq: monthly
   <div class="border-l-[3px] border-accent bg-[rgba(255,255,255,0.02)] py-[25px] px-[40px] mb-[30px]">
     <h2 class="text-light uppercase text-[1.2rem] tracking-[2px] mt-0">I'm Not Lutheran. Can I Still Attend?</h2>
     <p class="mt-[0.25rem]">Absolutely. Visitors of all backgrounds are welcome to worship with us. Many people visit us out of curiosity about Lutheranism, the historic liturgy, or simply seeking a church. We are glad to have you.</p>
-    <p class="mt-3">If you have questions about what we believe, the <a href="/church/">About Our Church</a> page is a good starting point. You are also welcome to speak with the Pastor before or after the service.</p>
+    <p class="mt-3">If you have questions about what we believe, the <a href="{{ '/church/' | url }}">About Our Church</a> page is a good starting point. You are also welcome to speak with the Pastor before or after the service.</p>
   </div>
 
   <div class="border-l-[3px] border-accent bg-[rgba(255,255,255,0.02)] py-[25px] px-[40px] mb-[30px]">
@@ -58,7 +58,7 @@ changefreq: monthly
   <div class="border-l-[3px] border-accent bg-[rgba(255,255,255,0.02)] py-[25px] px-[40px] mb-[30px]">
     <h2 class="text-light uppercase text-[1.2rem] tracking-[2px] mt-0">I'd Like to Speak With the Pastor</h2>
     <p class="mt-[0.25rem]">The Pastor is available before and after the service, and by appointment. Whether you have questions about the faith, are interested in membership, or are seeking pastoral care — he is glad to speak with you.</p>
-    <p class="mt-3">You can also reach the church office at <a href="tel:248-644-8890">248-644-8890</a> or <a href="mailto:info@ascensionofchrist.org">info@ascensionofchrist.org</a>, or use our <a href="/contact/">Contact</a> page.</p>
+    <p class="mt-3">You can also reach the church office at <a href="tel:248-644-8890">248-644-8890</a> or <a href="mailto:info@ascensionofchrist.org">info@ascensionofchrist.org</a>, or use our <a href="htps://google.com">Contact</a> form.</p>
   </div>
 
   <div class="border-l-[3px] border-accent bg-[rgba(255,255,255,0.02)] py-[25px] px-[40px] mb-[30px]">

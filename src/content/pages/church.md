@@ -34,8 +34,8 @@ changefreq: monthly
 
     <div class="w-full md:w-1/2 max-w-[1300px] text-left mt-[25px]">
         <p class="text-[1.25rem] text-white">At Ascension of Christ, you will find a welcoming community gathered around the objective promises of God in Word & Sacrament. We are a parish of the baptized, bound together by a shared confession of the infallible and inerrant Holy Scriptures, the Lutheran Confessions, and a love of the historic liturgy: where we are shown our sins by the Law, and comforted with the promise of the Gospel: Christ crucified for our sins.</p>
-        <div class="mt-4 text-[1.25rem] text-white">Visiting for the first time? Find out more information on our <a href="/visitor/">Visitor FAQ</a> page.</div>
-        <div class="mt-3 text-[1.25rem] text-white">We gather together for the Divine Service with Holy Communion every Sunday morning at <div class="text-white inline text-[1.35rem]"><b><i>10:15AM EST</i></b></div>. For more on our worship practice, see our <a href="/worship">Worship</a> page.</div>
+        <div class="mt-4 text-[1.25rem] text-white">Visiting for the first time? Find out more information on our <a href="{{ '/visitor/' | url }}">Visitor FAQ</a> page.</div>
+        <div class="mt-3 text-[1.25rem] text-white">We gather together for the Divine Service with Holy Communion every Sunday morning at <div class="text-white inline text-[1.35rem]"><b><i>10:15AM EST</i></b></div>. For more on our worship practice, see our <a href="{{ '/worship' | url }}">Worship</a> page.</div>
     </div>
 
     <div class="text-[1.25rem] w-full md:w-1/2 max-w-[1300px]">

@@ -25,4 +25,4 @@ changefreq: weekly
 
 </div>
 
-<script src="/assets/scripts/lectionary.js"></script>
+<script src="{{ '/assets/scripts/lectionary.js' | url }}"></script>
