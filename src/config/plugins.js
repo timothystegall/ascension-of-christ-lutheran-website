@@ -2,9 +2,8 @@
  * Add Eleventy plugins here
  * https://www.11ty.dev/docs/plugins/
  */
-
-import { eleventyImageTransformPlugin } from "@11ty/eleventy-img";
 import { EleventyHtmlBasePlugin } from "@11ty/eleventy";
+import { eleventyImageTransformPlugin } from "@11ty/eleventy-img";
 // import reusableComponents from "eleventy-plugin-reusable-components";
 
 export default {
@@ -31,7 +30,7 @@ export default {
 	async styling(eleventyConfig) {
 		eleventyConfig.addPlugin(EleventyHtmlBasePlugin);
 		eleventyConfig.addPassthroughCopy("css"); 
-	}
+	},
 	/**
 	 * ascension-of-christ-lutheran-website Reusable Components plugin
 	 * https://github.com/Timothy Stegall/eleventy-plugin-reusable-components
