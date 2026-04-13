@@ -1,8 +1,8 @@
 {
-  "name": "Ascension of Christ Lutheran Church & Child Care - Beverly Hills, Michigan",
-  "description": "Confessional LCMS Lutheran church and child care in Beverly Hills, Michigan.",
-  "type": "website",
-  "url": "https://ascensionofchrist.org",
-  "github_repo": "timothystegall/ascension-of-christ-lutheran-website",
-  "github_branch": "main"
+	"name": "Ascension of Christ Lutheran Church & Child Care - Beverly Hills, Michigan",
+	"description": "Confessional LCMS Lutheran church and child care in Beverly Hills, Michigan.",
+	"type": "website",
+	"url": "https://ascensionofchrist.org",
+	"github_repo": "timothystegall/ascension-of-christ-lutheran-website",
+	"github_branch": "main"
 }

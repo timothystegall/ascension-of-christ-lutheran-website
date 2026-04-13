@@ -14,20 +14,20 @@
  * 3. Pages without title or permalink are not published
  */
 export default {
-  eleventyComputed: {
-    // Generate permalink URLs for pages
-    permalink: function(data) {
-      // If the page has an explicit permalink, use it
-      if (data.permalink) return data.permalink;
+	eleventyComputed: {
+		// Generate permalink URLs for pages
+		permalink: function (data) {
+			// If the page has an explicit permalink, use it
+			if (data.permalink) return data.permalink;
 
-      // If no permalink is provided, generate permalink from title using slugify filter
-      if (data.title) {
-        const slug = this.slugify(data.title);
-        return `/${slug}/`;
-      }
+			// If no permalink is provided, generate permalink from title using slugify filter
+			if (data.title) {
+				const slug = this.slugify(data.title);
+				return `/${slug}/`;
+			}
 
-      // If neither permalink nor title is provided, this page is not published
-      return false;
-    },
-  },
+			// If neither permalink nor title is provided, this page is not published
+			return false;
+		},
+	},
 };

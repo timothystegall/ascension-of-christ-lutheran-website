@@ -1,19 +1,19 @@
 {
-  "items": [
-    {
-      "text": "Divine Service Livestream",
-      "url": "https://www.youtube.com/@aoclcms",
-      "external": true
-    },
-    {
-      "text": "Giving",
-      "url": "https://www.youtube.com/@aoclcms",
-      "external": true
-    },
-    {
-      "text": "Contact Us",
-      "url": "https://docs.google.com/forms/",
-      "external": true
-    }
-  ]
+	"items": [
+		{
+			"text": "Divine Service Livestream",
+			"url": "https://www.youtube.com/@aoclcms",
+			"external": true
+		},
+		{
+			"text": "Giving",
+			"url": "https://www.youtube.com/@aoclcms",
+			"external": true
+		},
+		{
+			"text": "Contact Us",
+			"url": "https://docs.google.com/forms/",
+			"external": true
+		}
+	]
 }
