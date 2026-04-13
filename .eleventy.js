@@ -114,7 +114,6 @@ export default async function (eleventyConfig) {
 	build(eleventyConfig);
 	eleventyConfig.setServerOptions({ showAllHosts: false });
 	eleventyConfig.setQuietMode(true);
-
 	return {
 		pathPrefix: "/ascension-of-christ-lutheran-website/",
 		dir: {
