@@ -30,6 +30,7 @@ export default {
 	async styling(eleventyConfig) {
 		eleventyConfig.addPlugin(EleventyHtmlBasePlugin);
 		eleventyConfig.addPassthroughCopy("css");
+		eleventyConfig.addPassthroughCopy(".nojekyll");
 	},
 	/**
 	 * ascension-of-christ-lutheran-website Reusable Components plugin
