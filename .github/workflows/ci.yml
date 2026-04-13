@@ -9,21 +9,23 @@ jobs:
   lint:
     name: 🔍 Lint and Annotate
     runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      checks: write # Required for annotations if using specific reporters
 
     steps:
       - name: 📥 Checkout repository
         uses: actions/checkout@v4
 
       - name: 📦 Setup Biome
-        uses: biomejs/setup-biome@v2
+        uses: [biomejs/setup-biome](https://github.com/marketplace/actions/setup-biome)@v2
         with:
           version: latest
 
-      - name: 🔍 Biome Lint and Annotate
-        uses: biomejs/biome-action@v3
-        with:
-          repo-token: ${{ secrets.GITHUB_TOKEN }}
-          action-name: 'Biome'
+      - name: 🔍 Run Biome
+        # 'biome ci' is optimized for CI: it runs check, format, and lint
+        # --reporter=github automatically adds annotations to your PR
+        run: biome ci --reporter=github .
 
   build:
     name: 🏗️ Build Test
