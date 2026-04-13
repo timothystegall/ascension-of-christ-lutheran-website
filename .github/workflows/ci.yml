@@ -34,6 +34,13 @@ jobs:
     steps:
       - name: 📥 Checkout repository
         uses: actions/checkout@v4
+      
+      - name: 📦 Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          # Explicitly set the version required by your package
+          node-version: '24' 
+          cache: 'npm'
 
       - name: 🏗️ Build Site
         uses: ./.github/actions/build
