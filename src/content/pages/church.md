@@ -17,10 +17,10 @@ changefreq: monthly
     </div>
 
     <div class="flex flex-col md:flex-row justify-center gap-5 w-full max-w-[1300px] my-[30px]">
-        <img src="/assets/images/nave.jpg" alt="The Nave" class="min-w-0 w-[90%] md:flex-1 h-auto aspect-[4/5] object-cover rounded-lg brightness-[0.85] border-2 border-accent transition-transform duration-300 hover:scale-[1.02] hover:brightness-100 mx-auto md:mx-0">
-        <img src="/assets/images/church-outside.jpg" alt="The Church" class="min-w-0 w-[90%] md:flex-1 h-auto aspect-[4/5] object-cover rounded-lg brightness-[0.85] border-2 border-accent transition-transform duration-300 hover:scale-[1.02] hover:brightness-100 mx-auto md:mx-0">
-        <img src="/assets/images/crucifix.jpg" alt="The Crucifix" class="min-w-0 w-[90%] md:flex-1 h-auto aspect-[4/5] object-cover rounded-lg brightness-[0.85] border-2 border-accent transition-transform duration-300 hover:scale-[1.02] hover:brightness-100 mx-auto md:mx-0">
-        <img src="/assets/images/organ.jpg" alt="The Baptismal Font" class="min-w-0 w-[90%] md:flex-1 h-auto aspect-[4/5] object-cover rounded-lg brightness-[0.85] border-2 border-accent transition-transform duration-300 hover:scale-[1.02] hover:brightness-100 mx-auto md:mx-0">
+        <img src="/assets/images/nave.jpg" alt="The Nave" class="min-w-0 w-full md:flex-1 h-auto aspect-[3/2] md:aspect-[4/5] object-cover rounded-lg brightness-[0.85] border-2 border-accent transition-transform duration-300 hover:scale-[1.02] hover:brightness-100 mx-auto md:mx-0">
+        <img src="/assets/images/church-outside.jpg" alt="The Church" class="min-w-0 w-full md:flex-1 h-auto aspect-[3/2] md:aspect-[4/5] object-cover rounded-lg brightness-[0.85] border-2 border-accent transition-transform duration-300 hover:scale-[1.02] hover:brightness-100 mx-auto md:mx-0">
+        <img src="/assets/images/crucifix.jpg" alt="The Crucifix" class="min-w-0 w-full md:flex-1 h-auto aspect-[3/2] md:aspect-[4/5] object-cover rounded-lg brightness-[0.85] border-2 border-accent transition-transform duration-300 hover:scale-[1.02] hover:brightness-100 mx-auto md:mx-0">
+        <img src="/assets/images/organ.jpg" alt="The Baptismal Font" class="min-w-0 w-full md:flex-1 h-auto aspect-[3/2] md:aspect-[4/5] object-cover rounded-lg brightness-[0.85] border-2 border-accent transition-transform duration-300 hover:scale-[1.02] hover:brightness-100 mx-auto md:mx-0">
     </div>
 
     <a href="https://bookofconcord.cph.org/" target="_blank" class="text-white hover:no-underline">

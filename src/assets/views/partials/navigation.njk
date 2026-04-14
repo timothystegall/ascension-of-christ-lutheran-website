@@ -1,12 +1,25 @@
 <nav class="flex items-center justify-between px-[25px] py-[10px] border-b border-light bg-main" role="navigation">
-  <a href="{{ '/' | url }}" class="hover:no-underline">
+  <a href="/" class="hover:no-underline">
     <div class="flex items-center">
       <img src="/assets/images/logo-no-text.png" alt="Ascension of Christ Lutheran Church Logo" class="h-[80px] w-auto inline">
-      <h4 class="ml-[15px] text-white font-display font-bold">Ascension of Christ Lutheran Church & Child Care</h4>
+      <h4 class="ml-[15px] text-white font-display font-bold hidden sm:block">Ascension of Christ Lutheran Church & Child Care</h4>
     </div>
   </a>
 
-  <div class="flex">
+  {#- Hamburger button (mobile only) -#}
+  <button
+    id="nav-toggle"
+    class="md:hidden flex flex-col justify-center items-center w-[40px] h-[40px] gap-[6px] cursor-pointer bg-transparent border-0 p-0"
+    aria-label="Toggle navigation"
+    aria-expanded="false"
+    aria-controls="nav-mobile-menu"
+  >
+    <span class="block w-[26px] h-[2px] bg-accent transition-all duration-300"></span>
+    <span class="block w-[26px] h-[2px] bg-accent transition-all duration-300"></span>
+    <span class="block w-[26px] h-[2px] bg-accent transition-all duration-300"></span>
+  </button>
+
+  <div class="hidden md:flex">
     {%- for item in navigation.items -%}
 
       {#- Set attributes and classes to blank to start -#}
@@ -39,3 +52,29 @@
     {%- endfor -%}
   </div>
 </nav>
+
+{#- Mobile nav dropdown -#}
+<div id="nav-mobile-menu" class="hidden bg-main border-b border-light px-[25px] py-[10px] flex-col md:hidden">
+  {%- for item in navigation.items -%}
+
+    {%- set relAttribute = '' -%}
+    {%- set itemUrl = item.url -%}
+
+    {%- if item.rel -%}
+      {%- set relAttribute = ' rel="' + item.rel + '"' -%}
+    {%- endif -%}
+
+    {%- if item.external == true -%}
+      {%- set relAttribute = 'noopener noreferrer' -%}
+    {%- endif -%}
+
+    <a
+      class="text-accent hover:text-accent/80 transition-colors duration-300 hover:no-underline py-[8px] border-b border-light/20 last:border-0"
+      href="{{ itemUrl }}"
+      rel="{{ relAttribute | safe }}"
+    >
+      {{- item.text -}}
+    </a>
+
+  {%- endfor -%}
+</div>

@@ -114,6 +114,85 @@ function getDailyReadings(day) {
 	return { first: m[38]?.text ?? null, second: m[39]?.text ?? null };
 }
 
+const bgLink = (ref) =>
+	`https://www.biblegateway.com/passage/?search=${encodeURIComponent(ref)}&version=NKJV`;
+
+function buildReadingRows(readings, festivalTitle, daily) {
+	let html = "";
+	if (readings?.title)
+		html += `<div class="lect-sunday-title">${readings.title}</div>`;
+	if (readings?.ot)
+		html += `<div class="lect-reading"><span class="lect-reading-label">OT</span> <a class="lect-reading-link" href="${bgLink(readings.ot)}" target="_blank" rel="noopener">${readings.ot}</a></div>`;
+	if (readings?.epistle)
+		html += `<div class="lect-reading"><span class="lect-reading-label">Ep</span> <a class="lect-reading-link" href="${bgLink(readings.epistle)}" target="_blank" rel="noopener">${readings.epistle}</a></div>`;
+	if (readings?.gospel)
+		html += `<div class="lect-reading"><span class="lect-reading-label">Gsp</span> <a class="lect-reading-link" href="${bgLink(readings.gospel)}" target="_blank" rel="noopener">${readings.gospel}</a></div>`;
+	if (festivalTitle)
+		html += `<div class="lect-festival">${festivalTitle}</div>`;
+	if (daily?.first)
+		html += `<div class="lect-reading lect-daily"><span class="lect-reading-label">I</span> <a class="lect-reading-link" href="${bgLink(daily.first)}" target="_blank" rel="noopener">${daily.first}</a></div>`;
+	if (daily?.second)
+		html += `<div class="lect-reading lect-daily"><span class="lect-reading-label">II</span> <a class="lect-reading-link" href="${bgLink(daily.second)}" target="_blank" rel="noopener">${daily.second}</a></div>`;
+	return html;
+}
+
+const WEEKDAY_NAMES = [
+	"Sunday",
+	"Monday",
+	"Tuesday",
+	"Wednesday",
+	"Thursday",
+	"Friday",
+	"Saturday",
+];
+
+function renderMobileCards(grid) {
+	let html = '<div class="lect-mobile-cards">';
+
+	for (const week of grid) {
+		const hasAnyDay = week.some((d) => d?.date);
+		if (!hasAnyDay) continue;
+
+		html += '<div class="lect-mobile-week">';
+
+		for (const day of week) {
+			if (!day?.date) continue;
+
+			const isSunday = day.date.weekday === 7;
+			const readings = isSunday ? getSundayReadings(day) : null;
+			const festivalTitle = getFestivalTitle(day);
+			const dailyReadings = getDailyReadings(day);
+
+			const hasContent =
+				readings ||
+				festivalTitle ||
+				dailyReadings.first ||
+				dailyReadings.second;
+			if (!isSunday && !hasContent) continue;
+
+			const colorClass = readings?.color
+				? ` lect-color-${readings.color.toLowerCase().replace(/\s+/g, "-")}`
+				: "";
+			const todayMark = isToday(day.date);
+			const weekdayIdx = day.date.weekday === 7 ? 0 : day.date.weekday;
+			const weekdayName = WEEKDAY_NAMES[weekdayIdx];
+
+			html += `<div class="lect-mobile-day${isSunday ? ` lect-mobile-sunday${colorClass}` : ""}">`;
+			html += `<div class="lect-mobile-day-header">
+        <span class="lect-mobile-weekday">${weekdayName}</span>
+        <span class="lect-mobile-date${todayMark ? " lect-today" : ""}">${day.date.day}</span>
+      </div>`;
+			html += buildReadingRows(readings, festivalTitle, dailyReadings);
+			html += "</div>";
+		}
+
+		html += "</div>";
+	}
+
+	html += "</div>";
+	return html;
+}
+
 function render(year, month) {
 	const container = document.getElementById("lectionary-calendar");
 	if (!container) return;
@@ -131,30 +210,25 @@ function render(year, month) {
 		"Saturday",
 	];
 
-	let html = `
-    <div class="lectionary-calendar">
-      <div class="lectionary-nav">
-        <button id="lect-prev">&laquo; Prev</button>
-        <h2>${getMonthLabel(year, month)}</h2>
-        <button id="lect-next">Next &raquo;</button>
-      </div>
-      <div class="lectionary-table-wrap">
-      <table class="lectionary-table">
-        <colgroup>
-          <col class="col-sunday">
-          <col><col><col><col><col><col>
-        </colgroup>
-        <thead>
-          <tr>${weekdays.map((d) => `<th>${d}</th>`).join("")}</tr>
-        </thead>
-        <tbody>
+	// ── Desktop table ──────────────────────────────────────────────
+	let tableHTML = `
+    <div class="lectionary-table-wrap">
+    <table class="lectionary-table">
+      <colgroup>
+        <col class="col-sunday">
+        <col><col><col><col><col><col>
+      </colgroup>
+      <thead>
+        <tr>${weekdays.map((d) => `<th>${d}</th>`).join("")}</tr>
+      </thead>
+      <tbody>
   `;
 
 	for (const week of grid) {
-		html += "<tr>";
+		tableHTML += "<tr>";
 		for (const day of week) {
 			if (!day?.date) {
-				html += `<td class="lect-empty"></td>`;
+				tableHTML += `<td class="lect-empty"></td>`;
 				continue;
 			}
 
@@ -167,37 +241,17 @@ function render(year, month) {
 				? ` lect-color-${readings.color.toLowerCase().replace(/\s+/g, "-")}`
 				: "";
 
-			const bgLink = (ref) =>
-				`https://www.biblegateway.com/passage/?search=${encodeURIComponent(ref)}&version=NKJV`;
 			let cellContent = `<div class="lect-day-number${todayClass}">${day.date.day}</div>`;
+			cellContent += buildReadingRows(readings, festivalTitle, daily);
 
-			if (readings?.title) {
-				cellContent += `<div class="lect-sunday-title">${readings.title}</div>`;
-			}
-			if (readings?.ot) {
-				cellContent += `<div class="lect-reading"><span class="lect-reading-label">OT</span> <a class="lect-reading-link" href="${bgLink(readings.ot)}" target="_blank" rel="noopener">${readings.ot}</a></div>`;
-			}
-			if (readings?.epistle) {
-				cellContent += `<div class="lect-reading"><span class="lect-reading-label">Ep</span> <a class="lect-reading-link" href="${bgLink(readings.epistle)}" target="_blank" rel="noopener">${readings.epistle}</a></div>`;
-			}
-			if (readings?.gospel) {
-				cellContent += `<div class="lect-reading"><span class="lect-reading-label">Gsp</span> <a class="lect-reading-link" href="${bgLink(readings.gospel)}" target="_blank" rel="noopener">${readings.gospel}</a></div>`;
-			}
-			if (festivalTitle) {
-				cellContent += `<div class="lect-festival">${festivalTitle}</div>`;
-			}
-			if (daily?.first) {
-				cellContent += `<div class="lect-reading lect-daily"><span class="lect-reading-label">I</span> <a class="lect-reading-link" href="${bgLink(daily.first)}" target="_blank" rel="noopener">${daily.first}</a></div>`;
-			}
-			if (daily?.second) {
-				cellContent += `<div class="lect-reading lect-daily"><span class="lect-reading-label">II</span> <a class="lect-reading-link" href="${bgLink(daily.second)}" target="_blank" rel="noopener">${daily.second}</a></div>`;
-			}
-
-			html += `<td class="lect-day${isSunday ? " lect-sunday" : ""}${colorClass}">${cellContent}</td>`;
+			tableHTML += `<td class="lect-day${isSunday ? " lect-sunday" : ""}${colorClass}">${cellContent}</td>`;
 		}
-		html += "</tr>";
+		tableHTML += "</tr>";
 	}
 
+	tableHTML += `</tbody></table></div>`;
+
+	// ── Color key ──────────────────────────────────────────────────
 	const colorKey = [
 		{ cls: "violet", label: "Violet", desc: "Advent & Lent" },
 		{
@@ -217,9 +271,9 @@ function render(year, month) {
 		{ abbr: "GSP", meaning: "Gospel" },
 	];
 
-	html += `</tbody></table></div>
+	const colorKeyHTML = `
     <div class="lect-color-key">
-      <h3 class="lect-color-key-heading">Calendar Key</h3>
+      <h3 class="lect-color-key-heading">Lectionary Key</h3>
       <div class="lect-key-section">
         <h4 class="lect-key-subheading">Reading Abbreviations</h4>
         <ul class="lect-color-key-list">
@@ -249,8 +303,21 @@ function render(year, month) {
 						.join("")}
         </ul>
       </div>
-    </div>
-  </div>`;
+    </div>`;
+
+	// ── Assemble ───────────────────────────────────────────────────
+	const html = `
+    <div class="lectionary-calendar">
+      <div class="lectionary-nav">
+        <button id="lect-prev">&laquo; Prev</button>
+        <h2>${getMonthLabel(year, month)}</h2>
+        <button id="lect-next">Next &raquo;</button>
+      </div>
+      <div class="lect-desktop">${tableHTML}</div>
+      <div class="lect-mobile">${renderMobileCards(grid)}</div>
+      ${colorKeyHTML}
+    </div>`;
+
 	container.innerHTML = html;
 
 	document.getElementById("lect-prev").addEventListener("click", () => {

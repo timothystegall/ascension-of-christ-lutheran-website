@@ -213,16 +213,16 @@
 }
 
 .lect-reading {
-	font-size: 0.9rem;
+	font-size: 0.95rem;
 	color: var(--color-link);
 	padding: 3px 10px;
 	line-height: 1.65;
 }
 
 .lect-reading-link {
-	color: var(--color-link);
-	text-decoration: underline;
-	text-decoration-color: rgba(234, 234, 234, 0.55);
+	font-family: var(--font-serif);
+	color: #fff;
+	text-decoration: none;
 	text-underline-offset: 2px;
 	transition:
 		color 0.15s,
@@ -231,6 +231,7 @@
 
 .lect-reading-link:hover {
 	color: var(--color-accent);
+	text-decoration: underline;
 	text-decoration-color: var(--color-accent);
 }
 
@@ -344,6 +345,131 @@
 	font-style: italic;
 	padding: 5px 10px;
 	line-height: 1.35;
+}
+
+/* ── Lectionary responsive visibility ── */
+
+.lect-desktop {
+	display: block;
+}
+.lect-mobile {
+	display: none;
+}
+
+@media (max-width: 767px) {
+	.lect-desktop {
+		display: none;
+	}
+	.lect-mobile {
+		display: block;
+	}
+}
+
+/* ── Mobile day cards ── */
+
+.lect-mobile-cards {
+	display: flex;
+	flex-direction: column;
+	gap: 16px;
+}
+
+.lect-mobile-week {
+	display: flex;
+	flex-direction: column;
+	gap: 6px;
+}
+
+.lect-mobile-day {
+	background: #18202a;
+	border: 1px solid rgba(74, 85, 104, 0.4);
+	padding: 12px 14px;
+}
+
+.lect-mobile-sunday {
+	background: #111820;
+	border-left: 3px solid var(--color-gold-dim);
+	padding-top: 0;
+}
+
+.lect-mobile-sunday::before {
+	content: "";
+	display: block;
+	height: 3px;
+	background: var(--color-gold-dim);
+	margin: 0 -14px 10px;
+}
+
+.lect-mobile-sunday.lect-color-violet {
+	border-left-color: #a882d4;
+}
+.lect-mobile-sunday.lect-color-violet::before {
+	background: #a882d4;
+}
+.lect-mobile-sunday.lect-color-white {
+	border-left-color: #e6dfc0;
+}
+.lect-mobile-sunday.lect-color-white::before {
+	background: #e6dfc0;
+}
+.lect-mobile-sunday.lect-color-green {
+	border-left-color: #5fb86a;
+}
+.lect-mobile-sunday.lect-color-green::before {
+	background: #5fb86a;
+}
+.lect-mobile-sunday.lect-color-red {
+	border-left-color: #d94f4f;
+}
+.lect-mobile-sunday.lect-color-red::before {
+	background: #d94f4f;
+}
+.lect-mobile-sunday.lect-color-black {
+	border-left-color: #777;
+}
+.lect-mobile-sunday.lect-color-black::before {
+	background: #777;
+}
+.lect-mobile-sunday.lect-color-rose {
+	border-left-color: #e07898;
+}
+.lect-mobile-sunday.lect-color-rose::before {
+	background: #e07898;
+}
+
+.lect-mobile-day-header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 4px;
+	padding-top: 10px;
+}
+
+.lect-mobile-sunday .lect-mobile-day-header {
+	padding-top: 0;
+	margin-top: 10px;
+}
+
+.lect-mobile-weekday {
+	font-size: 0.68rem;
+	font-weight: 700;
+	letter-spacing: 0.1em;
+	text-transform: uppercase;
+	color: var(--color-accent-blue);
+}
+
+.lect-mobile-sunday .lect-mobile-weekday {
+	color: var(--color-accent);
+}
+
+.lect-mobile-date {
+	font-size: 0.95rem;
+	font-weight: 600;
+	color: var(--color-accent-blue);
+	line-height: 1;
+}
+
+.lect-mobile-sunday .lect-mobile-date {
+	color: var(--color-link);
 }
 
 @layer base {

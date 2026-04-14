@@ -13,7 +13,7 @@ description: Enroll your child at Ascension of Christ Child Care & Preschool in 
     <p class="text-accent-blue italic">Rooted In Faith: A Christ-centered place to grow, play, and learn</p>
   </header>
 
-  <div class="border border-accent bg-gradient-to-b from-[#202830] to-[rgba(161,181,203,0.05)] p-[40px] mb-[40px] text-center">
+  <div class="border border-accent bg-gradient-to-b from-[#202830] to-[rgba(161,181,203,0.05)] p-[20px] sm:p-[40px] mb-[40px] text-center">
     <p class="text-[1.1rem] mb-[15px]">Are you looking for additional information? Tell us more about your family and your care needs — our Enrollment Coordinator will be in touch with you shortly.</p>
     <div class="border-l-[3px] border-accent-blue bg-[rgba(161,181,203,0.07)] px-[20px] py-[12px] text-left mb-[30px]">
       <p class="text-[0.9rem] text-white m-0">Due to high demand for care, our current response time is <i><strong>5&ndash;7 business days</strong></i>. We currently have a waiting list for infant and toddler care.</p>

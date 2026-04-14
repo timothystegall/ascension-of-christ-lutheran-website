@@ -23,7 +23,7 @@ changefreq: monthly
     <a href="mailto:cookc@ascensionofchrist.org" class="inline-block mt-[10px] px-[24px] py-[10px] border border-accent !text-white uppercase tracking-[2px] text-[0.85rem] hover:bg-accent hover:text-dark-bg transition-colors duration-300 hover:no-underline">Inquire About Enrollment</a>
   </div>
 
-  <div class="border-l-[3px] border-accent bg-[rgba(255,255,255,0.02)] py-[25px] px-[40px] mb-[40px] flex flex-row gap-[40px] items-center">
+  <div class="border-l-[3px] border-accent bg-[rgba(255,255,255,0.02)] py-[25px] px-[20px] sm:px-[40px] mb-[40px] flex flex-col sm:flex-row gap-[20px] sm:gap-[40px] items-center">
     <img src="/assets/images/chelsea.jpg" alt="Chelsea Cook, Program Director" class="w-[140px] h-[140px] object-cover object-top rounded-full border-2 border-accent flex-shrink-0">
     <div>
       <h2 class="text-accent-blue uppercase text-[1.2rem] tracking-[2px] mt-0">Contact Our Program Director</h2>
@@ -36,7 +36,7 @@ changefreq: monthly
     </div>
   </div>
 
-  <div class="border-l-[3px] border-accent bg-[rgba(255,255,255,0.02)] py-[25px] px-[40px] mb-[40px]">
+  <div class="border-l-[3px] border-accent bg-[rgba(255,255,255,0.02)] py-[25px] px-[20px] sm:px-[40px] mb-[40px]">
     <h2 class="text-accent-blue uppercase text-[1.2rem] tracking-[2px] mt-0">Our Curriculum</h2>
     <p class="mt-[0.25rem]">We use the <strong class="text-accent">One in Christ Curriculum</strong> — a comprehensive, play-based, Christ-centered resource for Infant, Toddler, and Preschool education. It provides a themed, constructive environment and delivers age-appropriate activities for sharing the love of Jesus in everyday fun.</p>
     <p class="mt-[15px]">Bible stories, finger play, creative activities, prayers, and songs help our little ones develop a love for the Lord and for learning. Our Preschool and Pre-K classrooms also incorporate the <strong class="text-accent">Handwriting Without Tears</strong> curriculum to support each child's individual development.</p>
@@ -46,8 +46,8 @@ changefreq: monthly
 
   <div class="flex flex-col gap-[12px] mb-[40px]">
 
-    <div class="flex flex-row items-stretch gap-0 border border-border-dim bg-[rgba(255,255,255,0.02)] overflow-hidden">
-      <img src="/assets/images/sprouts.png" alt="Baby Sprouts classroom" class="w-[40%] object-cover flex-shrink-0">
+    <div class="flex flex-col sm:flex-row items-stretch gap-0 border border-border-dim bg-[rgba(255,255,255,0.02)] overflow-hidden">
+      <img src="/assets/images/sprouts.png" alt="Baby Sprouts classroom" class="w-full sm:w-[40%] max-h-[220px] sm:max-h-none object-cover flex-shrink-0">
       <div class="p-[25px]">
         <h3 class="text-accent text-[1.1rem] uppercase tracking-[2px] mt-0 mb-[8px]">Baby Sprouts</h3>
         <p class="text-accent-blue text-[0.85rem] uppercase tracking-[1px] mb-[12px]">Infants</p>
@@ -55,8 +55,8 @@ changefreq: monthly
       </div>
     </div>
 
-    <div class="flex flex-row-reverse items-stretch gap-0 border border-border-dim bg-[rgba(255,255,255,0.02)] overflow-hidden">
-      <img src="/assets/images/tinysprouts.png" alt="Tiny Sprouts classroom" class="w-[40%] object-cover flex-shrink-0">
+    <div class="flex flex-col sm:flex-row-reverse items-stretch gap-0 border border-border-dim bg-[rgba(255,255,255,0.02)] overflow-hidden">
+      <img src="/assets/images/tinysprouts.png" alt="Tiny Sprouts classroom" class="w-full sm:w-[40%] max-h-[220px] sm:max-h-none object-cover flex-shrink-0">
       <div class="p-[25px]">
         <h3 class="text-accent text-[1.1rem] uppercase tracking-[2px] mt-0 mb-[8px]">Tiny Sprouts</h3>
         <p class="text-accent-blue text-[0.85rem] uppercase tracking-[1px] mb-[12px]">Transitional Infants &amp; Young Toddlers</p>
@@ -64,8 +64,8 @@ changefreq: monthly
       </div>
     </div>
 
-    <div class="flex flex-row items-stretch gap-0 border border-border-dim bg-[rgba(255,255,255,0.02)] overflow-hidden">
-      <img src="/assets/images/toddlers-and-twos.png" alt="Toddlers and Twos classroom" class="w-[40%] object-cover flex-shrink-0">
+    <div class="flex flex-col sm:flex-row items-stretch gap-0 border border-border-dim bg-[rgba(255,255,255,0.02)] overflow-hidden">
+      <img src="/assets/images/toddlers-and-twos.png" alt="Toddlers and Twos classroom" class="w-full sm:w-[40%] max-h-[220px] sm:max-h-none object-cover flex-shrink-0">
       <div class="p-[25px]">
         <h3 class="text-accent text-[1.1rem] uppercase tracking-[2px] mt-0 mb-[8px]">Toddlers &amp; Twos</h3>
         <p class="text-accent-blue text-[0.85rem] uppercase tracking-[1px] mb-[12px]">Older Toddlers</p>
@@ -73,8 +73,8 @@ changefreq: monthly
       </div>
     </div>
 
-    <div class="flex flex-row-reverse items-stretch gap-0 border border-border-dim bg-[rgba(255,255,255,0.02)] overflow-hidden">
-      <img src="/assets/images/preschool-a-and-b.png" alt="Preschool A and B classroom" class="w-[40%] object-cover flex-shrink-0">
+    <div class="flex flex-col sm:flex-row-reverse items-stretch gap-0 border border-border-dim bg-[rgba(255,255,255,0.02)] overflow-hidden">
+      <img src="/assets/images/preschool-a-and-b.png" alt="Preschool A and B classroom" class="w-full sm:w-[40%] max-h-[220px] sm:max-h-none object-cover flex-shrink-0">
       <div class="p-[25px]">
         <h3 class="text-accent text-[1.1rem] uppercase tracking-[2px] mt-0 mb-[8px]">Preschool A &amp; B</h3>
         <p class="text-accent-blue text-[0.85rem] uppercase tracking-[1px] mb-[12px]">Preschool</p>
@@ -82,8 +82,8 @@ changefreq: monthly
       </div>
     </div>
 
-    <div class="flex flex-row items-stretch gap-0 border border-border-dim bg-[rgba(197,160,89,0.04)] overflow-hidden">
-      <img src="/assets/images/pre-k.jpg" alt="Pre-K classroom" class="w-[40%] object-cover flex-shrink-0">
+    <div class="flex flex-col sm:flex-row items-stretch gap-0 border border-border-dim bg-[rgba(197,160,89,0.04)] overflow-hidden">
+      <img src="/assets/images/pre-k.jpg" alt="Pre-K classroom" class="w-full sm:w-[40%] max-h-[220px] sm:max-h-none object-cover flex-shrink-0">
       <div class="p-[25px]">
         <h3 class="text-accent text-[1.1rem] uppercase tracking-[2px] mt-0 mb-[8px]">Pre-K</h3>
         <p class="text-accent-blue text-[0.85rem] uppercase tracking-[1px] mb-[12px]">Kindergarten Preparation</p>

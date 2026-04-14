@@ -11,7 +11,7 @@ description: The history of Ascension of Christ Lutheran Church — from the fou
         <h1 class="text-accent uppercase tracking-[4px] mb-[10px] text-[2.2rem]">Our History</h1>
     </header>
     <div class="w-full flex justify-center">
-        <img src="/assets/images/church-outside.jpg" alt="The Church" class="border-2 border-accent w-1/2 h-1/2 mx-auto md:mx-0">
+        <img src="/assets/images/church-outside.jpg" alt="The Church" class="border-2 border-accent w-full sm:w-1/2 mx-auto md:mx-0">
     </div>
     <div class="text-[1.25rem] w-full">
         <div class="text-left pt-[25px]">
