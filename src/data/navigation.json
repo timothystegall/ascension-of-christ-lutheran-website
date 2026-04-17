@@ -12,8 +12,7 @@
 		},
 		{
 			"text": "Contact Us",
-			"url": "https://docs.google.com/forms/",
-			"external": true
+			"url": "/contact/"
 		}
 	]
 }

@@ -1,0 +1,113 @@
+---
+title: Vacation & Holiday Request
+permalink: /childcare/vacation-request/
+description: Submit a vacation or holiday credit request for your child at Ascension of Christ Child Care & Preschool.
+layout: base.njk
+---
+
+{% include "partials/childcare-nav.html" %}
+
+<div class="bg-dark-bg text-link font-serif max-w-[950px] mx-auto py-[40px] px-[20px]">
+
+  <header class="text-center mb-[40px]">
+    <h1 class="text-accent uppercase tracking-[4px] mb-[10px] text-[2rem]">Vacation &amp; Holiday Request</h1>
+    <p class="text-accent-blue italic">Use this form to submit vacation credit requests or to apply a vacation day credit toward a center holiday closure.</p>
+  </header>
+
+  <div id="form-wrapper" class="border border-[rgba(255,255,255,0.1)] bg-[rgba(255,255,255,0.02)] p-[30px] sm:p-[40px]">
+    <form id="vacation-form" novalidate>
+      <input type="hidden" name="form_type" value="vacation-request">
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-5 mb-6">
+        <div>
+          <label for="first_name" class="block text-[0.8rem] uppercase tracking-[1px] text-accent-blue mb-[6px]">Child's First Name <span class="text-accent">*</span></label>
+          <input type="text" id="first_name" name="first_name" required class="w-full bg-[rgba(255,255,255,0.04)] border border-[rgba(255,255,255,0.15)] text-link px-3 py-2 focus:outline-none focus:border-accent transition-colors duration-200">
+        </div>
+        <div>
+          <label for="last_name" class="block text-[0.8rem] uppercase tracking-[1px] text-accent-blue mb-[6px]">Child's Last Name <span class="text-accent">*</span></label>
+          <input type="text" id="last_name" name="last_name" required class="w-full bg-[rgba(255,255,255,0.04)] border border-[rgba(255,255,255,0.15)] text-link px-3 py-2 focus:outline-none focus:border-accent transition-colors duration-200">
+        </div>
+      </div>
+
+      <div class="mb-5 border-t border-[rgba(255,255,255,0.08)] pt-6">
+        <span class="block text-[0.8rem] uppercase tracking-[1px] text-accent-blue mb-[10px]">Would you like to submit a vacation credit request? <span class="text-accent">*</span></span>
+        <div class="flex gap-6">
+          <label class="flex items-center gap-2 cursor-pointer">
+            <input type="radio" name="vacation_credit" value="Yes" required class="accent-[#c5a059] w-4 h-4">
+            <span class="text-link text-[0.95rem]">Yes</span>
+          </label>
+          <label class="flex items-center gap-2 cursor-pointer">
+            <input type="radio" name="vacation_credit" value="No" required class="accent-[#c5a059] w-4 h-4">
+            <span class="text-link text-[0.95rem]">No</span>
+          </label>
+        </div>
+      </div>
+
+      <div class="mb-6">
+        <label for="vacation_comments" class="block text-[0.8rem] uppercase tracking-[1px] text-accent-blue mb-[6px]">Comments <span class="text-[0.75rem] normal-case tracking-normal text-link/60">(dates, details, etc.)</span></label>
+        <textarea id="vacation_comments" name="vacation_comments" rows="3" class="w-full bg-[rgba(255,255,255,0.04)] border border-[rgba(255,255,255,0.15)] text-link px-3 py-2 focus:outline-none focus:border-accent transition-colors duration-200 resize-y"></textarea>
+      </div>
+
+      <div class="mb-5 border-t border-[rgba(255,255,255,0.08)] pt-6">
+        <span class="block text-[0.8rem] uppercase tracking-[1px] text-accent-blue mb-[10px]">Would you like to use a "vacation day" credit for a holiday during which the center will be closed? <span class="text-accent">*</span></span>
+        <div class="flex gap-6">
+          <label class="flex items-center gap-2 cursor-pointer">
+            <input type="radio" name="holiday_credit" value="Yes" required class="accent-[#c5a059] w-4 h-4">
+            <span class="text-link text-[0.95rem]">Yes</span>
+          </label>
+          <label class="flex items-center gap-2 cursor-pointer">
+            <input type="radio" name="holiday_credit" value="No" required class="accent-[#c5a059] w-4 h-4">
+            <span class="text-link text-[0.95rem]">No</span>
+          </label>
+        </div>
+      </div>
+
+      <div class="mb-6">
+        <label for="holiday_comments" class="block text-[0.8rem] uppercase tracking-[1px] text-accent-blue mb-[6px]">Comments <span class="text-[0.75rem] normal-case tracking-normal text-link/60">(which holiday, etc.)</span></label>
+        <textarea id="holiday_comments" name="holiday_comments" rows="3" class="w-full bg-[rgba(255,255,255,0.04)] border border-[rgba(255,255,255,0.15)] text-link px-3 py-2 focus:outline-none focus:border-accent transition-colors duration-200 resize-y"></textarea>
+      </div>
+
+      <div id="form-status" class="mb-4 text-[0.9rem]"></div>
+
+      <button type="submit" id="submit-btn" class="px-[24px] py-[10px] border border-accent text-accent uppercase tracking-[2px] text-[0.85rem] hover:bg-accent hover:text-dark-bg transition-colors duration-300 cursor-pointer disabled:opacity-50">
+        Submit
+      </button>
+    </form>
+  </div>
+
+</div>
+
+<script>
+  document.getElementById('vacation-form').addEventListener('submit', async function (e) {
+    e.preventDefault();
+    const btn = document.getElementById('submit-btn');
+    const status = document.getElementById('form-status');
+    const wrapper = document.getElementById('form-wrapper');
+
+    if (!this.checkValidity()) {
+      this.reportValidity();
+      return;
+    }
+
+    btn.disabled = true;
+    btn.textContent = 'Submitting...';
+    status.textContent = '';
+
+    try {
+      const res = await fetch('/api/submit-form', { method: 'POST', body: new FormData(this) });
+      if (res.ok) {
+        wrapper.innerHTML = '<div class="text-center py-[60px]"><p class="text-accent text-[1.5rem] uppercase tracking-[4px] mb-4">Thank You!</p><p class="text-link">Your vacation/holiday request has been successfully submitted. We will be in touch shortly.</p></div>';
+      } else {
+        status.textContent = 'There was an error submitting the form. Please try again or contact us directly.';
+        status.className = 'mb-4 text-[0.9rem] text-red-400';
+        btn.disabled = false;
+        btn.textContent = 'Submit';
+      }
+    } catch {
+      status.textContent = 'There was an error submitting the form. Please try again or contact us directly.';
+      status.className = 'mb-4 text-[0.9rem] text-red-400';
+      btn.disabled = false;
+      btn.textContent = 'Submit';
+    }
+  });
+</script>

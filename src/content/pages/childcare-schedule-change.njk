@@ -1,0 +1,134 @@
+---
+title: Schedule Change Request
+permalink: /childcare/schedule-change/
+description: Submit a schedule change request for your child at Ascension of Christ Child Care & Preschool.
+layout: base.njk
+---
+
+{% include "partials/childcare-nav.html" %}
+
+<div class="bg-dark-bg text-link font-serif max-w-[950px] mx-auto py-[40px] px-[20px]">
+
+  <header class="text-center mb-[40px]">
+    <h1 class="text-accent uppercase tracking-[4px] mb-[10px] text-[2rem]">Schedule Change Request</h1>
+    <p class="text-accent-blue italic">Please submit schedule change requests at least two weeks in advance.</p>
+  </header>
+
+  <div id="form-wrapper" class="border border-[rgba(255,255,255,0.1)] bg-[rgba(255,255,255,0.02)] p-[30px] sm:p-[40px]">
+    <form id="schedule-form" novalidate>
+      <input type="hidden" name="form_type" value="schedule-change">
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-5 mb-5">
+        <div>
+          <label for="child_first_name" class="block text-[0.8rem] uppercase tracking-[1px] text-accent-blue mb-[6px]">Child's First Name <span class="text-accent">*</span></label>
+          <input type="text" id="child_first_name" name="child_first_name" required class="w-full bg-[rgba(255,255,255,0.04)] border border-[rgba(255,255,255,0.15)] text-link px-3 py-2 focus:outline-none focus:border-accent transition-colors duration-200">
+        </div>
+        <div>
+          <label for="child_last_name" class="block text-[0.8rem] uppercase tracking-[1px] text-accent-blue mb-[6px]">Child's Last Name <span class="text-accent">*</span></label>
+          <input type="text" id="child_last_name" name="child_last_name" required class="w-full bg-[rgba(255,255,255,0.04)] border border-[rgba(255,255,255,0.15)] text-link px-3 py-2 focus:outline-none focus:border-accent transition-colors duration-200">
+        </div>
+      </div>
+
+      <div class="mb-5">
+        <label for="contact_email" class="block text-[0.8rem] uppercase tracking-[1px] text-accent-blue mb-[6px]">Contact Email <span class="text-accent">*</span></label>
+        <input type="email" id="contact_email" name="contact_email" required class="w-full bg-[rgba(255,255,255,0.04)] border border-[rgba(255,255,255,0.15)] text-link px-3 py-2 focus:outline-none focus:border-accent transition-colors duration-200">
+      </div>
+
+      <div class="mb-5">
+        <span class="block text-[0.8rem] uppercase tracking-[1px] text-accent-blue mb-[6px]">Classroom(s) <span class="text-accent">*</span></span>
+        <div class="flex flex-wrap gap-x-6 gap-y-2 mt-1">
+          {% set classrooms = ["Baby Sprouts", "Tiny Sprouts", "Toddlers & Twos", "Preschool A & B", "Pre-K"] %}
+          {% for room in classrooms %}
+          <label class="flex items-center gap-2 cursor-pointer">
+            <input type="checkbox" name="classrooms" value="{{ room }}" class="accent-[#c5a059] w-4 h-4">
+            <span class="text-link text-[0.95rem]">{{ room }}</span>
+          </label>
+          {% endfor %}
+        </div>
+      </div>
+
+      <div class="mb-5">
+        <span class="block text-[0.8rem] uppercase tracking-[1px] text-accent-blue mb-[6px]">Child's Current Schedule <span class="text-accent">*</span></span>
+        <div class="flex flex-wrap gap-x-6 gap-y-2 mt-1">
+          {% set days = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"] %}
+          {% for day in days %}
+          <label class="flex items-center gap-2 cursor-pointer">
+            <input type="checkbox" name="current_schedule" value="{{ day }}" class="accent-[#c5a059] w-4 h-4">
+            <span class="text-link text-[0.95rem]">{{ day }}</span>
+          </label>
+          {% endfor %}
+        </div>
+      </div>
+
+      <div class="mb-5">
+        <span class="block text-[0.8rem] uppercase tracking-[1px] text-accent-blue mb-[6px]">New Schedule <span class="text-accent">*</span></span>
+        <div class="flex flex-wrap gap-x-6 gap-y-2 mt-1">
+          {% for day in days %}
+          <label class="flex items-center gap-2 cursor-pointer">
+            <input type="checkbox" name="new_schedule" value="{{ day }}" class="accent-[#c5a059] w-4 h-4">
+            <span class="text-link text-[0.95rem]">{{ day }}</span>
+          </label>
+          {% endfor %}
+        </div>
+      </div>
+
+      <div class="mb-5">
+        <label for="change_type" class="block text-[0.8rem] uppercase tracking-[1px] text-accent-blue mb-[6px]">Type of Change <span class="text-accent">*</span></label>
+        <select id="change_type" name="change_type" required class="w-full bg-[rgba(255,255,255,0.04)] border border-[rgba(255,255,255,0.15)] text-link px-3 py-2 focus:outline-none focus:border-accent transition-colors duration-200">
+          <option value="" disabled selected>Select type...</option>
+          <option value="Temporary - 1 week">Temporary — 1 week</option>
+          <option value="Permanent">Permanent</option>
+          <option value="Summer - 2+ weeks">Summer — 2+ weeks</option>
+          <option value="Other">Other</option>
+        </select>
+      </div>
+
+      <div class="mb-6">
+        <label for="comments" class="block text-[0.8rem] uppercase tracking-[1px] text-accent-blue mb-[6px]">Comments</label>
+        <textarea id="comments" name="comments" rows="4" class="w-full bg-[rgba(255,255,255,0.04)] border border-[rgba(255,255,255,0.15)] text-link px-3 py-2 focus:outline-none focus:border-accent transition-colors duration-200 resize-y"></textarea>
+      </div>
+
+      <div id="form-status" class="mb-4 text-[0.9rem]"></div>
+
+      <button type="submit" id="submit-btn" class="px-[24px] py-[10px] border border-accent text-accent uppercase tracking-[2px] text-[0.85rem] hover:bg-accent hover:text-dark-bg transition-colors duration-300 cursor-pointer disabled:opacity-50">
+        Submit
+      </button>
+    </form>
+  </div>
+
+</div>
+
+<script>
+  document.getElementById('schedule-form').addEventListener('submit', async function (e) {
+    e.preventDefault();
+    const btn = document.getElementById('submit-btn');
+    const status = document.getElementById('form-status');
+    const wrapper = document.getElementById('form-wrapper');
+
+    if (!this.checkValidity()) {
+      this.reportValidity();
+      return;
+    }
+
+    btn.disabled = true;
+    btn.textContent = 'Submitting...';
+    status.textContent = '';
+
+    try {
+      const res = await fetch('/api/submit-form', { method: 'POST', body: new FormData(this) });
+      if (res.ok) {
+        wrapper.innerHTML = '<div class="text-center py-[60px]"><p class="text-accent text-[1.5rem] uppercase tracking-[4px] mb-4">Thank You!</p><p class="text-link">Your schedule change request has been successfully submitted. We will be in touch shortly.</p></div>';
+      } else {
+        status.textContent = 'There was an error submitting the form. Please try again or contact us directly.';
+        status.className = 'mb-4 text-[0.9rem] text-red-400';
+        btn.disabled = false;
+        btn.textContent = 'Submit';
+      }
+    } catch {
+      status.textContent = 'There was an error submitting the form. Please try again or contact us directly.';
+      status.className = 'mb-4 text-[0.9rem] text-red-400';
+      btn.disabled = false;
+      btn.textContent = 'Submit';
+    }
+  });
+</script>
