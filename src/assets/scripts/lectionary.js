@@ -312,9 +312,12 @@ function render(year, month) {
 	const html = `
     <div class="lectionary-calendar">
       <div class="lectionary-nav">
-        <button id="lect-prev">&laquo; Prev</button>
-        <h2>${getMonthLabel(year, month)}${!isCurrentMonth ? ` <button id="lect-today" style="background:none;border:none;cursor:pointer;color:var(--color-accent);font-size:0.5em;vertical-align:middle;padding:0 0.5em;">Today</button>` : ""}</h2>
-        <button id="lect-next">Next &raquo;</button>
+        <h2 class="lect-nav-title">${getMonthLabel(year, month)}</h2>
+        <div class="lect-nav-controls">
+          <button id="lect-prev">&laquo; Prev</button>
+          ${!isCurrentMonth ? `<button id="lect-today">Today</button>` : ""}
+          <button id="lect-next">Next &raquo;</button>
+        </div>
       </div>
       <div class="lect-desktop">${tableHTML}</div>
       <div class="lect-mobile">${renderMobileCards(grid)}</div>

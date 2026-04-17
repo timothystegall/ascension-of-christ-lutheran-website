@@ -47,14 +47,13 @@
 
 .lectionary-nav {
 	display: flex;
+	flex-direction: column;
 	align-items: center;
-	gap: 16px;
+	gap: 12px;
 	margin-bottom: 24px;
 }
 
-.lectionary-nav h2 {
-	flex: 1;
-	text-align: center;
+.lect-nav-title {
 	margin: 0;
 	font-family: Georgia, serif;
 	font-size: 1.75rem;
@@ -62,6 +61,13 @@
 	letter-spacing: 0.16em;
 	text-transform: uppercase;
 	color: var(--color-link);
+	text-align: center;
+}
+
+.lect-nav-controls {
+	display: flex;
+	align-items: center;
+	gap: 12px;
 }
 
 .lectionary-nav button {
