@@ -112,7 +112,7 @@ function buildTable(title, rows) {
       <tr>
         <td style="padding:8px 16px;font-weight:bold;background:#f0f0f0;white-space:nowrap;border:1px solid #ddd;vertical-align:top">${label}</td>
         <td style="padding:8px 16px;border:1px solid #ddd;vertical-align:top">${String(value).replace(/\n/g, "<br>")}</td>
-      </tr>`
+      </tr>`,
 		)
 		.join("");
 	return `
