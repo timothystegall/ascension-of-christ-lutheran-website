@@ -11,7 +11,6 @@ layout: base.njk
 
   <header class="text-center mb-[40px]">
     <h1 class="text-accent uppercase tracking-[4px] mb-[10px] text-[2rem]">Withdrawal Form</h1>
-    <p class="text-accent-blue italic">Please complete all required fields and submit at least two weeks prior to your child's last day.</p>
   </header>
 
   <div id="form-wrapper" class="border border-[rgba(255,255,255,0.1)] bg-[rgba(255,255,255,0.02)] p-[30px] sm:p-[40px]">
@@ -73,10 +72,31 @@ layout: base.njk
         <textarea id="comments" name="comments" rows="4" class="w-full bg-[rgba(255,255,255,0.04)] border border-[rgba(255,255,255,0.15)] text-link px-3 py-2 focus:outline-none focus:border-accent transition-colors duration-200 resize-y"></textarea>
       </div>
 
-      <div class="mb-6 border border-[rgba(255,255,255,0.1)] bg-[rgba(255,255,255,0.02)] p-4">
+      <div class="mb-4 border border-[rgba(255,255,255,0.1)] bg-[rgba(255,255,255,0.02)] p-4">
         <label class="flex items-start gap-3 cursor-pointer">
           <input type="checkbox" name="agreement" id="agreement" required class="accent-[#c5a059] w-4 h-4 mt-1 flex-shrink-0">
-          <span class="text-[0.9rem] text-link">I understand this withdrawal request will be processed in accordance with the Child Care Center's policies and that the required notice period applies. <span class="text-accent">*</span></span>
+          <span class="text-[0.9rem] text-link">I understand this withdrawal request will be processed in accordance with the Child Care Center's policies. <span class="text-accent">*</span></span>
+        </label>
+      </div>
+
+      <div class="mb-4 border border-[rgba(255,255,255,0.1)] bg-[rgba(255,255,255,0.02)] p-4">
+        <label class="flex items-start gap-3 cursor-pointer">
+          <input type="checkbox" name="agreement_withdrawal_fee" id="agreement_withdrawal_fee" required class="accent-[#c5a059] w-4 h-4 mt-1 flex-shrink-0">
+          <span class="text-[0.9rem] text-link">I agree to pay a $350 withdrawal fee via my Tuition Express account. <span class="text-accent">*</span></span>
+        </label>
+      </div>
+
+      <div class="mb-4 border border-[rgba(255,255,255,0.1)] bg-[rgba(255,255,255,0.02)] p-4">
+        <label class="flex items-start gap-3 cursor-pointer">
+          <input type="checkbox" name="agreement_tuition_deposit" id="agreement_tuition_deposit" required class="accent-[#c5a059] w-4 h-4 mt-1 flex-shrink-0">
+          <span class="text-[0.9rem] text-link">I agree to pay a two-week tuition deposit prior to my child's last day of care. <span class="text-accent">*</span></span>
+        </label>
+      </div>
+
+      <div class="mb-6 border border-[rgba(255,255,255,0.1)] bg-[rgba(255,255,255,0.02)] p-4">
+        <label class="flex items-start gap-3 cursor-pointer">
+          <input type="checkbox" name="agreement_return_space" id="agreement_return_space" required class="accent-[#c5a059] w-4 h-4 mt-1 flex-shrink-0">
+          <span class="text-[0.9rem] text-link">I am aware that return space for any withdrawal lasting more than 4 weeks is not guaranteed. <span class="text-accent">*</span></span>
         </label>
       </div>
 
