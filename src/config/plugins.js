@@ -13,7 +13,7 @@ export default {
 	async image(eleventyConfig) {
 		eleventyConfig.addPlugin(eleventyImageTransformPlugin, {
 			outputDir: "public/assets/images",
-			urlPath: "/ascension-of-christ-lutheran-website/assets/images/",
+			urlPath: "/assets/images/",
 			transformOnRequest: false,
 			extensions: "html",
 			formats: ["auto"],
