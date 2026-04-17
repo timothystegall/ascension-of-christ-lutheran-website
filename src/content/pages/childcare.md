@@ -10,14 +10,13 @@ changefreq: monthly
 
 <div class="bg-dark-bg text-link font-serif max-w-[950px] mx-auto py-[40px] px-[20px]">
 
-  <header class="text-center mb-[50px]">
-    <h1 class="text-accent uppercase tracking-[4px] mb-[10px] text-[2.2rem]">Child Care &amp; Preschool</h1>
-    <p class="text-accent-blue italic">Rooted In Faith: A Christ-centered place to grow, play, and learn</p>
+  <header class="flex justify-center mb-[50px]">
+    <img src="/assets/images/child-care-logo.png" alt="Ascension Early Child Care Center — Rooted In Faith" class="max-w-full h-auto max-h-[130px] w-auto border-3 border-accent rounded-lg">
   </header>
 
   <div class="border border-accent bg-gradient-to-b from-[#202830] to-[rgba(161,181,203,0.05)] pb-[40px] mb-[40px] text-center relative overflow-hidden">
     <img src="/assets/images/childcare.jpg" alt="Ascension Child Care Center" class="w-full max-h-[300px] object-cover block border-b border-gold-dim mb-[30px]">
-    <p class="text-[1.15rem] px-[20px]">We are a State of Michigan-licensed child care center accepting children <strong class="text-accent">ages 6 weeks and up</strong>. Limited enrollment is available — inquire about enrolling your child today!</p>
+    <p class="text-[1.15rem] px-[20px]">We are a state-licensed child care center accepting children <strong class="text-accent">ages 6 weeks and up</strong>. Limited enrollment is available — inquire about enrolling your child today!</p>
     <span class="text-accent-blue uppercase text-[0.9rem] tracking-[2px] block mt-[15px]">Monday – Friday</span>
     <span class="text-[1.5rem] text-light font-bold block border-t border-b border-border-dim py-[10px] mx-auto my-[15px] text-nowrap">7:00 AM – 6:00 PM</span>
     <a href="mailto:cookc@ascensionofchrist.org" class="inline-block mt-[10px] px-[24px] py-[10px] border border-accent !text-white uppercase tracking-[2px] text-[0.85rem] hover:bg-accent hover:text-dark-bg transition-colors duration-300 hover:no-underline">Inquire About Enrollment</a>
