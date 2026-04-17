@@ -1,6 +1,7 @@
 ---
 title: Parish Calendar
-permalink: /calendar/
+permalink: false
+eleventyExcludeFromCollections: true
 description: The Ascension of Christ parish calendar of events — Divine Services, fellowship, group meetings, and parish events in Beverly Hills, MI.
 priority: 0.6
 changefreq: weekly
