@@ -28,7 +28,7 @@ description: Parent resources for Ascension of Christ Child Care & Preschool —
       <span class="text-accent opacity-60 group-hover:opacity-100 text-[1.1rem] flex-shrink-0">&#8595;</span>
       <span class="text-link group-hover:text-accent transition-colors duration-300">Center Closure Dates</span>
     </a>
-    <a href="#" class="flex items-center gap-[15px] border border-border-dim bg-[rgba(255,255,255,0.02)] px-[20px] py-[16px] hover:border-accent hover:bg-[rgba(197,160,89,0.05)] transition-colors duration-300 hover:no-underline group">
+    <!--<a href="#" class="flex items-center gap-[15px] border border-border-dim bg-[rgba(255,255,255,0.02)] px-[20px] py-[16px] hover:border-accent hover:bg-[rgba(197,160,89,0.05)] transition-colors duration-300 hover:no-underline group">
       <span class="text-accent opacity-60 group-hover:opacity-100 text-[1.1rem] flex-shrink-0">&#8595;</span>
       <span class="text-link group-hover:text-accent transition-colors duration-300">Vacation Request Form</span>
     </a>
@@ -39,7 +39,7 @@ description: Parent resources for Ascension of Christ Child Care & Preschool —
     <a href="#" class="flex items-center gap-[15px] border border-border-dim bg-[rgba(255,255,255,0.02)] px-[20px] py-[16px] hover:border-accent hover:bg-[rgba(197,160,89,0.05)] transition-colors duration-300 hover:no-underline group">
       <span class="text-accent opacity-60 group-hover:opacity-100 text-[1.1rem] flex-shrink-0">&#8595;</span>
       <span class="text-link group-hover:text-accent transition-colors duration-300">Child Care Temporary Withdrawal Form</span>
-    </a>
+    </a>-->
   </div>
 
   <div class="border border-accent-blue p-5 text-center">
