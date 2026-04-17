@@ -82,7 +82,7 @@ export async function onRequestPost(context) {
 	// The "from" domain (ascensionofchrist.org) must be verified in the Resend dashboard.
 	const emailPayload = {
 		from: "Ascension of Christ Lutheran <noreply@ascensionofchrist.org>",
-		to: ["info@ascensionofchrist.org"],
+		to: ["timothy@timothystegall.com"],
 		subject,
 		html,
 	};
