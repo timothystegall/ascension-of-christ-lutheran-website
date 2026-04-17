@@ -306,11 +306,14 @@ function render(year, month) {
     </div>`;
 
 	// ── Assemble ───────────────────────────────────────────────────
+	const isCurrentMonth =
+		year === today.getFullYear() && month === today.getMonth() + 1;
+
 	const html = `
     <div class="lectionary-calendar">
       <div class="lectionary-nav">
         <button id="lect-prev">&laquo; Prev</button>
-        <h2>${getMonthLabel(year, month)}</h2>
+        <h2>${getMonthLabel(year, month)}${!isCurrentMonth ? ` <button id="lect-today" style="background:none;border:none;cursor:pointer;color:var(--color-accent);font-size:0.5em;vertical-align:middle;padding:0 0.5em;">Today</button>` : ""}</h2>
         <button id="lect-next">Next &raquo;</button>
       </div>
       <div class="lect-desktop">${tableHTML}</div>
@@ -336,6 +339,11 @@ function render(year, month) {
 		} else {
 			currentMonth++;
 		}
+		render(currentYear, currentMonth);
+	});
+	document.getElementById("lect-today")?.addEventListener("click", () => {
+		currentYear = today.getFullYear();
+		currentMonth = today.getMonth() + 1;
 		render(currentYear, currentMonth);
 	});
 }
