@@ -12,6 +12,7 @@ export async function onRequestPost(context) {
 	const get = (key) => formData.get(key) || "";
 
 	let subject, html, replyTo;
+	let recipients = ["childcare@ascensionofchrist.org"];
 
 	switch (formType) {
 		case "withdrawal": {
@@ -65,6 +66,7 @@ export async function onRequestPost(context) {
 			const firstName = get("first_name");
 			const lastName = get("last_name");
 			replyTo = get("email");
+			recipients = ["info@ascensionofchrist.org"];
 			subject = `Contact Form — ${firstName} ${lastName}`;
 			html = buildTable("Contact Us", [
 				["First Name", firstName],
@@ -82,7 +84,7 @@ export async function onRequestPost(context) {
 	// The "from" domain (ascensionofchrist.org) must be verified in the Resend dashboard.
 	const emailPayload = {
 		from: "Ascension of Christ Lutheran <noreply@ascensionofchrist.org>",
-		to: ["info@ascensionofchrist.org"],
+		to: recipients,
 		subject,
 		html,
 	};

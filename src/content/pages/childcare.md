@@ -15,7 +15,7 @@ changefreq: monthly
   </header>
 
   <div class="border border-accent bg-gradient-to-b from-[#202830] to-[rgba(161,181,203,0.05)] pb-[40px] mb-[40px] text-center relative overflow-hidden">
-    <img src="/assets/images/childcare.jpg" alt="Ascension Child Care Center" class="w-full max-h-[300px] object-cover block border-b border-gold-dim mb-[30px]">
+    <img src="/assets/images/jesus-blessing-children.jpg" alt="Ascension Child Care Center" class="w-full max-h-[300px] object-cover object-top block border-b border-gold-dim mb-[30px]">
     <p class="text-[1.15rem] px-[20px]">We are a state-licensed child care center accepting children <strong class="text-accent">ages 6 weeks and up</strong>. Limited enrollment is available — inquire about enrolling your child today!</p>
     <span class="text-accent-blue uppercase text-[0.9rem] tracking-[2px] block mt-[15px]">Monday – Friday</span>
     <span class="text-[1.5rem] text-light font-bold block border-t border-b border-border-dim py-[10px] mx-auto my-[15px] text-nowrap">7:00 AM – 6:00 PM</span>
