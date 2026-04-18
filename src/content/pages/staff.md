@@ -32,7 +32,7 @@ description: Meet the pastoral staff and musicians of Ascension of Christ Luther
       </div>
       <div class="p-[25px] flex-1 flex flex-col justify-center text-left">
         <span class="text-accent font-bold text-[1.4rem] mb-[5px] block">Mrs. Emma Stegall</span>
-        <span class="text-[0.9rem] uppercase tracking-[1px] opacity-80 mb-[15px] block">Kantor - Director of Music</span>
+        <span class="text-[0.9rem] uppercase tracking-[1px] opacity-80 mb-[15px] block">Kantor - Director of Parish Music</span>
         <p class="text-[0.85rem] leading-[1.6] m-0">
           Mrs. Emma Stegall was commissioned and installed as Kantor/Director of Parish Music at Ascension of Christ in August 2025. In May 2025, she graduated from Concordia University in Irvine, California with a Bachelor of Arts in Music (Church Music concentration), where she was part of the handbell and orchestral programs. Emma has studied organ under Kantor Janet Muth and Dr. Tom Mueller, and currently takes lessons with Dr. Jon Eifert. She and her husband, Timothy, were married in May 2025 and are currently expecting their first son.
         </p>
