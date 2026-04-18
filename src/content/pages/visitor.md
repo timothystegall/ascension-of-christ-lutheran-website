@@ -58,7 +58,7 @@ changefreq: monthly
   <div class="border-l-[3px] border-accent bg-[rgba(255,255,255,0.02)] py-[25px] px-[40px] mb-[30px]">
     <h2 class="text-light uppercase text-[1.2rem] tracking-[2px] mt-0">I'd Like to Speak With the Pastor</h2>
     <p class="mt-[0.25rem]">The Pastor is available before and after the service, and by appointment. Whether you have questions about the faith, are interested in membership, or are seeking pastoral care — he is glad to speak with you.</p>
-    <p class="mt-3">You can also reach the church office at <a href="tel:248-644-8890">248-644-8890</a> or <a href="mailto:info@ascensionofchrist.org">info@ascensionofchrist.org</a>, or use our <a href="htps://google.com">Contact</a> form.</p>
+    <p class="mt-3">You can also reach the church office at <a href="tel:248-644-8890">248-644-8890</a> or <a href="mailto:info@ascensionofchrist.org">info@ascensionofchrist.org</a>, or use our <a href="{{ '/contact/' | url }}">Contact</a> form.</p>
   </div>
 
   <div class="border-l-[3px] border-accent bg-[rgba(255,255,255,0.02)] py-[25px] px-[40px] mb-[30px]">
