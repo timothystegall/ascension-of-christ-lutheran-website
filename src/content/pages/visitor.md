@@ -26,7 +26,7 @@ changefreq: monthly
   <div class="border-l-[3px] border-accent bg-[rgba(255,255,255,0.02)] py-[25px] px-[40px] mb-[30px]">
     <h2 class="text-light uppercase text-[1.2rem] tracking-[2px] mt-0">What Should I Expect?</h2>
     <p class="mt-[0.25rem]">Our worship is the historic <strong>Divine Service</strong> — a liturgical service rooted in Scripture and the Lutheran Confessions, with spoken and chanted prayers, Scripture readings, a sermon, and the Lord's Supper. It follows <strong>Setting Three</strong> from the <em>Lutheran Service Book (LSB)</em>.</p>
-    <p class="mt-3">The service lasts approximately <strong>75–90 minutes</strong>. Bulletins are provided at the door with the order of service, so you can follow along even if you are unfamiliar with the liturgy. Hymnals are also in the pews.</p>
+    <p class="mt-3">The service lasts approximately <strong>75–90 minutes</strong>. Bulletins are provided at the entrance to the nave (sanctuary) by our ushers that contain the order of service, so you can follow along even if you are unfamiliar with the liturgy. Hymnals are also in the pews.</p>
     <p class="mt-3">For a detailed walkthrough of the service, see our <a href="{{ '/worship/' | url }}">Worship</a> page.</p>
   </div>
 
