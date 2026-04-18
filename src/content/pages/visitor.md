@@ -32,7 +32,7 @@ changefreq: monthly
 
   <div class="border-l-[3px] border-accent bg-[rgba(255,255,255,0.02)] py-[25px] px-[40px] mb-[30px]">
     <h2 class="text-light uppercase text-[1.2rem] tracking-[2px] mt-0">What Should I Wear?</h2>
-    <p class="mt-[0.25rem]">There is no dress code. Come as you are — though many in our congregation dress in Sunday best as an expression of reverence for the Lord's house. Whatever you wear, you are welcome.</p>
+    <p class="mt-[0.25rem]">There is no dress code, though many in our congregation dress in Sunday best as an expression of reverence for the Lord's house & the real presence of Christ's Body and Blood in the Eucharist. Whatever you wear, you are welcome: we are happy you're visiting!</p>
   </div>
 
   <div class="border-l-[3px] border-accent bg-[rgba(255,255,255,0.02)] py-[25px] px-[40px] mb-[30px]">
