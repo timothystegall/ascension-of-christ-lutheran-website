@@ -51,10 +51,12 @@ export async function onRequestPost(context) {
 		case "vacation-request": {
 			const firstName = get("first_name");
 			const lastName = get("last_name");
+			replyTo = get("contact_email");
 			subject = `Vacation/Holiday Request — ${firstName} ${lastName}`;
 			html = buildTable("Vacation/Holiday Request", [
 				["Child's First Name", firstName],
 				["Child's Last Name", lastName],
+				["Contact Email", replyTo],
 				["Vacation Credit Request", get("vacation_credit")],
 				["Vacation Credit Comments", get("vacation_comments") || "N/A"],
 				["Use Vacation Day for Holiday", get("holiday_credit")],
