@@ -114,8 +114,19 @@ function getDailyReadings(day) {
 	return { first: m[38]?.text ?? null, second: m[39]?.text ?? null };
 }
 
+const BG_BOOK_MAP = {
+	"Ex.": "Exodus",
+	"Ezk.": "Ezekiel",
+	"Is.": "Isaiah",
+	"Lk.": "Luke",
+	"Mk.": "Mark",
+};
+
+const normalizeBgRef = (ref) =>
+	ref.replace(/^([A-Za-z]+\.)/, (match) => BG_BOOK_MAP[match] ?? match);
+
 const bgLink = (ref) =>
-	`https://www.biblegateway.com/passage/?search=${encodeURIComponent(ref)}&version=NKJV`;
+	`https://www.biblegateway.com/passage/?search=${encodeURIComponent(normalizeBgRef(ref))}&version=NKJV`;
 
 function buildReadingRows(readings, festivalTitle, daily) {
 	let html = "";

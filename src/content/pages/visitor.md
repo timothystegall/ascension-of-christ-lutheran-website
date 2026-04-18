@@ -37,7 +37,7 @@ changefreq: monthly
 
   <div class="border-l-[3px] border-accent bg-[rgba(255,255,255,0.02)] py-[25px] px-[40px] mb-[30px]">
     <h2 class="text-light uppercase text-[1.2rem] tracking-[2px] mt-0">Can I Receive Holy Communion?</h2>
-    <p class="mt-[0.25rem]">We practice <strong>Closed Communion</strong>. Because we confess that the consecrated bread and wine are truly the Body and Blood of Christ, and because receiving the Sacrament is an act of confessional unity, we ask that only those who are members of a congregation in fellowship with the LCMS (or AALC) come forward to commune.</p>
+    <p class="mt-[0.25rem]">We practice <strong>Closed Communion</strong>. Because we confess that the consecrated bread and wine are truly the Body and Blood of Christ, and because receiving the Sacrament is an act of confessional unity, we ask that only those who are members of a congregation in fellowship with the LCMS (or a member of a church body whom the LCMS is in fellowship with: AALC, LCC, etc) come forward to commune.</p>
     <p class="mt-3">If you are a visitor who would like to receive the Sacrament, please <strong>speak with the Pastor before the service</strong>. He will be glad to speak with you. This is not meant to exclude — it is meant to protect.</p>
     <p class="mt-3">All visitors are warmly welcome to attend the service, hear God's Word proclaimed, and receive a blessing at the rail.</p>
   </div>
