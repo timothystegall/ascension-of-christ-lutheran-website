@@ -18,7 +18,7 @@ description: Enroll your child at Ascension of Christ Child Care & Preschool in 
     <div class="border-l-[3px] border-accent-blue bg-[rgba(161,181,203,0.07)] px-[20px] py-[12px] text-left mb-[30px]">
       <p class="text-[0.9rem] text-white m-0">Due to high demand for care, our current response time is <i><strong>5&ndash;7 business days</strong></i>. We currently have a waiting list for infant and toddler care.</p>
     </div>
-    <a href="mailto:cookc@ascensionofchrist.org" class="inline-block px-[30px] py-[12px] border border-accent text-accent uppercase tracking-[2px] text-[0.9rem] hover:bg-accent hover:text-dark-bg transition-colors duration-300 hover:no-underline">Inquire About Enrollment</a>
+    <a href="https://www.myprocare.com/Default/Index?aWtuPTI3ODI3NTY2ODcmc2NoSWQ9MQ" class="inline-block px-[30px] py-[12px] border border-accent text-accent uppercase tracking-[2px] text-[0.9rem] hover:bg-accent hover:text-dark-bg transition-colors duration-300 hover:no-underline">Inquire About Enrollment</a>
   </div>
 
   <h2 class="text-accent-blue uppercase tracking-[3px] text-center text-[1.4rem] mb-[25px]">Tuition Rates &amp; Fees</h2>
