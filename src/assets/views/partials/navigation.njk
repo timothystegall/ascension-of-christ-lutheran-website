@@ -65,12 +65,16 @@
       {%- endif -%}
 
       <a
-        class="text-accent hover:text-accent/80 transition-colors duration-300 hover:no-underline text-[0.7rem] whitespace-nowrap mx-[10px] my-[2px] {{ mobileActive }}"
+        class="text-accent hover:text-accent/80 transition-colors duration-300 hover:no-underline text-xs whitespace-nowrap mx-3 my-1 {{ mobileActive }}"
         href="{{ itemUrl }}"
         rel="{{ relAttribute | safe }}"
         {{ currentAttribute | safe }}
       >
-        {{- item.text -}}
+        {%- if item.text == "Divine Service Livestream" -%}
+          Service Livestream
+        {%- else -%}
+          {{- item.text -}}
+        {%- endif -%}
       </a>
 
     {%- endfor -%}
