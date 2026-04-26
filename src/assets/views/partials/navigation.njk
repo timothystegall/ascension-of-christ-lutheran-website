@@ -43,7 +43,7 @@
   </div>
 
   {#- Mobile nav bar - horizontal list of links below main nav -#}
-  <div class="md:hidden flex flex-wrap items-center justify-center gap-x-[20px] gap-y-[4px] px-[15px] py-[8px] border-t border-light/20">
+  <div class="md:hidden flex flex-wrap items-center justify-center px-[15px] py-[8px] border-t border-light/20">
     {%- for item in navigation.items -%}
 
       {%- set relAttribute = '' -%}
@@ -65,7 +65,7 @@
       {%- endif -%}
 
       <a
-        class="text-accent hover:text-accent/80 transition-colors duration-300 hover:no-underline text-[0.7rem] whitespace-nowrap {{ mobileActive }}"
+        class="text-accent hover:text-accent/80 transition-colors duration-300 hover:no-underline text-[0.7rem] whitespace-nowrap mx-[10px] my-[2px] {{ mobileActive }}"
         href="{{ itemUrl }}"
         rel="{{ relAttribute | safe }}"
         {{ currentAttribute | safe }}
