@@ -28,7 +28,7 @@ description: Meet the pastoral staff and musicians of Ascension of Christ Luther
 
     <div class="flex flex-col sm:flex-row border border-gold-dim rounded-sm overflow-hidden bg-[rgba(255,255,255,0.02)] items-stretch">
       <div class="w-full h-[300px] sm:w-[250px] sm:h-auto sm:flex-none border-b border-gold-dim sm:border-b-0 sm:border-r">
-        <img src="/assets/images/kantor.jpg" alt="Mrs. Emma Stegall" class="w-full h-full object-cover block">
+        <img src="/assets/images/kantor-emma.jpg" alt="Mrs. Emma Stegall" class="w-full h-full object-cover block">
       </div>
       <div class="p-[25px] flex-1 flex flex-col justify-center text-left">
         <span class="text-accent font-bold text-[1.4rem] mb-[5px] block">Mrs. Emma Stegall</span>
