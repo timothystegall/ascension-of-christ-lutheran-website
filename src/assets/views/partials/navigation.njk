@@ -1,80 +1,78 @@
-<nav class="flex items-center justify-between px-[25px] py-[10px] border-b border-light bg-main" role="navigation">
-  <a href="/" class="hover:no-underline">
-    <div class="flex items-center">
-      <img src="/assets/images/logo-no-text.png" alt="Ascension of Christ Lutheran Church Logo" class="h-[80px] w-auto inline">
-      <h4 class="ml-[15px] text-white font-display font-bold text-[0.85rem] sm:text-base max-w-[200px] sm:max-w-none sm:whitespace-nowrap">Ascension of Christ Lutheran Church & Child Care</h4>
+<nav class="bg-main border-b border-light" role="navigation">
+  {#- Top bar with logo and desktop navigation -#}
+  <div class="flex items-center justify-between px-[25px] py-[10px]">
+    <a href="/" class="hover:no-underline">
+      <div class="flex items-center">
+        <img src="/assets/images/logo-no-text.png" alt="Ascension of Christ Lutheran Church Logo" class="h-[80px] w-auto inline">
+        <h4 class="ml-[15px] text-white font-display font-bold text-[0.85rem] sm:text-base max-w-[200px] sm:max-w-none sm:whitespace-nowrap">Ascension of Christ Lutheran Church & Child Care</h4>
+      </div>
+    </a>
+
+    <div class="hidden md:flex">
+      {%- for item in navigation.items -%}
+
+        {#- Set attributes and classes to blank to start -#}
+        {%- set relAttribute = '' -%}
+        {%- set currentAttribute = '' -%}
+        {%- set itemUrl = item.url -%}
+        {%- set target = '' -%}
+        {%- set active = '' -%}
+        {%- set hasSubmenu = '' -%}
+        {%- set dropdown = '' -%}
+        {%- set dropdownToggle = '' -%}
+        {%- set dropdownAttributes = '' -%}
+
+        {#- Set Attributes -#}
+        {%- if item.rel -%}
+          {%- set relAttribute = ' rel="' + item.rel + '"' -%}
+        {%- endif -%}
+
+        {%- if page.url | lower == item.url | lower -%}
+          {%- set currentAttribute = ' aria-current="page"' -%}
+          {%- set active = 'active' -%}
+        {%- endif -%}
+
+        {%- if item.external == true -%}
+          {%- set relAttribute = 'noopener noreferrer' -%}
+        {%- endif -%}
+
+        {%- include "partials/nav-item.njk" -%}
+
+      {%- endfor -%}
     </div>
-  </a>
+  </div>
 
-  {#- Hamburger button (mobile only) -#}
-  <button
-    id="nav-toggle"
-    class="md:hidden flex flex-col justify-center items-center w-[40px] h-[40px] gap-[6px] cursor-pointer bg-transparent border-0 p-0"
-    aria-label="Toggle navigation"
-    aria-expanded="false"
-    aria-controls="nav-mobile-menu"
-  >
-    <span class="block w-[26px] h-[2px] bg-accent transition-all duration-300"></span>
-    <span class="block w-[26px] h-[2px] bg-accent transition-all duration-300"></span>
-    <span class="block w-[26px] h-[2px] bg-accent transition-all duration-300"></span>
-  </button>
-
-  <div class="hidden md:flex">
+  {#- Mobile nav bar - horizontal list of links below main nav -#}
+  <div class="md:hidden flex flex-wrap items-center justify-center gap-x-[12px] gap-y-[4px] px-[15px] py-[8px] border-t border-light/20">
     {%- for item in navigation.items -%}
 
-      {#- Set attributes and classes to blank to start -#}
       {%- set relAttribute = '' -%}
       {%- set currentAttribute = '' -%}
       {%- set itemUrl = item.url -%}
-      {%- set target = '' -%}
-      {%- set active = '' -%}
-      {%- set hasSubmenu = '' -%}
-      {%- set dropdown = '' -%}
-      {%- set dropdownToggle = '' -%}
-      {%- set dropdownAttributes = '' -%}
+      {%- set mobileActive = '' -%}
 
-      {#- Set Attributes -#}
       {%- if item.rel -%}
         {%- set relAttribute = ' rel="' + item.rel + '"' -%}
-      {%- endif -%}
-
-      {%- if page.url | lower == item.url | lower -%}
-        {%- set currentAttribute = ' aria-current="page"' -%}
-        {%- set active = 'active' -%}
       {%- endif -%}
 
       {%- if item.external == true -%}
         {%- set relAttribute = 'noopener noreferrer' -%}
       {%- endif -%}
 
-      {%- include "partials/nav-item.njk" -%}
+      {%- if page.url | lower == item.url | lower -%}
+        {%- set currentAttribute = ' aria-current="page"' -%}
+        {%- set mobileActive = 'font-bold underline' -%}
+      {%- endif -%}
+
+      <a
+        class="text-accent hover:text-accent/80 transition-colors duration-300 hover:no-underline text-[0.7rem] whitespace-nowrap {{ mobileActive }}"
+        href="{{ itemUrl }}"
+        rel="{{ relAttribute | safe }}"
+        {{ currentAttribute | safe }}
+      >
+        {{- item.text -}}
+      </a>
 
     {%- endfor -%}
   </div>
 </nav>
-
-{#- Mobile nav dropdown -#}
-<div id="nav-mobile-menu" class="hidden bg-main border-b border-light px-[25px] py-[10px] flex-col md:hidden">
-  {%- for item in navigation.items -%}
-
-    {%- set relAttribute = '' -%}
-    {%- set itemUrl = item.url -%}
-
-    {%- if item.rel -%}
-      {%- set relAttribute = ' rel="' + item.rel + '"' -%}
-    {%- endif -%}
-
-    {%- if item.external == true -%}
-      {%- set relAttribute = 'noopener noreferrer' -%}
-    {%- endif -%}
-
-    <a
-      class="text-accent hover:text-accent/80 transition-colors duration-300 hover:no-underline py-[8px] border-b border-light/20 last:border-0"
-      href="{{ itemUrl }}"
-      rel="{{ relAttribute | safe }}"
-    >
-      {{- item.text -}}
-    </a>
-
-  {%- endfor -%}
-</div>
