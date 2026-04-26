@@ -22,7 +22,7 @@ changefreq: monthly
     <span class="text-accent-blue uppercase text-[0.9rem] tracking-[2px] block mt-[10px]">Every Sunday</span>
     <span class="text-[2.8rem] text-light font-bold block border-t border-b border-border-dim py-[10px] max-w-[300px] mx-auto my-[15px]">10:15 AM</span>
     
-    <a href="/assets/documents/bulletin/2026.Quasimodo_Geniti-First_Sunday_after_Easter.pdf" class="underline">View This Sunday's Bulletin</a>
+    <a href="/assets/documents/bulletin/2026.Easter 4.Jubilate.pdf" class="underline">View This Sunday's Bulletin</a>
     
     <p class="text-[1rem] mt-5">
       <i>Bible Class - 9:00 AM</i>
