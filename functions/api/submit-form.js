@@ -44,6 +44,7 @@ export async function onRequestPost(context) {
 				["Current Schedule", formData.getAll("current_schedule").join(", ")],
 				["New Schedule", formData.getAll("new_schedule").join(", ")],
 				["Type of Change", get("change_type")],
+				["Effective Date", get("effective_date")],
 				["Comments", get("comments")],
 			]);
 			break;

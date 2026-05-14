@@ -90,6 +90,11 @@ layout: base.njk
         </select>
       </div>
 
+      <div class="mb-5">
+        <label for="effective_date" class="block text-[0.8rem] uppercase tracking-[1px] text-accent-blue mb-[6px]">Effective Date <span class="text-accent">*</span></label>
+        <input type="date" id="effective_date" name="effective_date" required class="w-full bg-[rgba(255,255,255,0.04)] border border-[rgba(255,255,255,0.15)] text-link px-3 py-2 focus:outline-none focus:border-accent transition-colors duration-200">
+      </div>
+
       <div class="mb-6">
         <label for="comments" class="block text-[0.8rem] uppercase tracking-[1px] text-accent-blue mb-[6px]">Comments</label>
         <textarea id="comments" name="comments" rows="4" class="w-full bg-[rgba(255,255,255,0.04)] border border-[rgba(255,255,255,0.15)] text-link px-3 py-2 focus:outline-none focus:border-accent transition-colors duration-200 resize-y"></textarea>
