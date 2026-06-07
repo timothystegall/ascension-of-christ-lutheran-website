@@ -6,6 +6,8 @@ A modern, accessible website for Ascension of Christ Lutheran Church, built with
 
 This repository contains the source code for the Ascension of Christ Lutheran Church website. The site is built using Eleventy, a simple static site generator, which allows for easy content management by myself, or the church staff.
 
+The live Church website can be viewed at: https://www.ascensionofchrist.org/
+
 ## Getting Started
 
 ### Installation & Development
