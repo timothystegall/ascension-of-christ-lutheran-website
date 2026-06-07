@@ -4,7 +4,7 @@ A modern, accessible website for Ascension of Christ Lutheran Church, built with
 
 ## Overview
 
-This repository contains the source code for the Ascension of Christ Lutheran Church website. The site is built using Eleventy, a simpler static site generator, which allows for easy content management and deployment through Cloudflare Pages.
+This repository contains the source code for the Ascension of Christ Lutheran Church website. The site is built using Eleventy, a simple static site generator, which allows for easy content management by myself, or the church staff.
 
 ## Getting Started
 
@@ -24,35 +24,30 @@ Visit `http://localhost:8080` to see the site in development mode.
 
 ```
 ascension-of-christ-lutheran-website/
-├── src/                          # Source directory
-│   ├── assets/                   # Site assets
-│   │   ├── fonts/                # Font files
-│   │   ├── images/               # Image assets
-│   │   ├── scripts/              # JavaScript files
-│   │   ├── styles/               # SCSS and CSS styles
-│   │   ├── views/                # Template views
-│   │   │   ├── layouts/          # Page layouts
-│   │   │   └── partials/         # Reusable components
-│   │   └── assets.json           # Asset configuration
-│   ├── config/                   # Eleventy configuration
-│   │   ├── build.js              # Build & bundler config
-│   │   ├── collections.js        # Collections config
-│   │   ├── filters.js            # Template filters
-│   │   ├── passthroughs.js       # Static file passthroughs
-│   │   ├── plugins.js            # Eleventy plugins
-│   │   ├── shortcodes.js         # Template shortcodes
-│   │   ├── templateLanguages.js  # Custom template languages
-│   │   ├── watchtargets.js       # Watch targets for dev
-│   │   └── config.json           # Config metadata
-│   ├── content/                  # Site content
-│   │   └── pages/                # Page files
-│   └── data/                     # Site data
-│       ├── navigation.json       # Navigation configuration
-│       └── site.json             # Site branding & metadata
-├── .eleventy.js                  # Eleventy config entry point
-├── cloudflare.toml               # Cloudflare Pages configuration
-├── netlify.toml                  # Netlify configuration (optional)
-└── README.md                     # This file
+├── src/                              # Source directory
+│   ├── _data/                        # Eleventy global data
+│   │   └── site.json                 # Site metadata and configuration
+│   ├── _includes/                    # Reusable template components
+│   │   ├── layouts/                  # Page layout templates
+│   │   └── partials/                 # Partial components
+│   ├── assets/                       # Static assets
+│   │   ├── css/                      # Stylesheets
+│   │   ├── fonts/                    # Custom fonts
+│   │   ├── images/                   # Image files
+│   │   └── js/                       # JavaScript files
+│   ├── pages/                        # Page content files
+│   └── .gitkeep
+├── _site/                            # Build output directory (generated)
+├── node_modules/                     # NPM dependencies
+├── .eleventy.js                      # Eleventy main configuration file
+├── .gitignore                        # Git ignore rules
+├── .prettierignore                   # Prettier ignore rules
+├── .prettierrc.json                  # Prettier configuration
+├── cloudflare.toml                   # Cloudflare Pages configuration
+├── package.json                      # NPM dependencies and scripts
+├── package-lock.json                 # Locked NPM dependency versions
+├── README.md                         # This file
+└── [other config files]              # Various configuration files
 ```
 
 ## Technology Stack
