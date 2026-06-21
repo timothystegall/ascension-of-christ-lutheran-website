@@ -1,7 +1,7 @@
 ---
 title: Child Care & Pre-School
 permalink: /childcare/
-description: State-licensed child care and preschool in Beverly Hills, MI, serving Oakland County families with infants through Pre-K. Christ-centered curriculum, experienced teachers, open Monday–Friday 7 AM–6 PM.
+description: State-licensed child care and preschool in Beverly Hills, MI, serving Oakland County families with infants through Pre-K. Christ-centered curriculum, experienced teachers, open Monday&ndash;Friday 7 AM&ndash;6 PM.
 priority: 0.9
 changefreq: monthly
 ---
@@ -17,8 +17,8 @@ changefreq: monthly
   <div class="border border-accent bg-gradient-to-b from-[#202830] to-[rgba(161,181,203,0.05)] pb-[40px] mb-[40px] text-center relative overflow-hidden">
     <img src="/assets/images/jesus-blessing-children.jpg" alt="Ascension Child Care Center" class="w-full max-h-[300px] object-cover object-top block border-b border-gold-dim mb-[30px]">
     <p class="text-[1.15rem] px-[20px]">We are a state-licensed child care center accepting children <strong class="text-accent">ages 6 weeks and up</strong>. Limited enrollment is available — inquire about enrolling your child today!</p>
-    <span class="text-accent-blue uppercase text-[0.9rem] tracking-[2px] block mt-[15px]">Monday – Friday</span>
-    <span class="text-[1.5rem] text-light font-bold block border-t border-b border-border-dim py-[10px] mx-auto my-[15px] text-nowrap">7:00 AM – 6:00 PM</span>
+    <span class="text-accent-blue uppercase text-[0.9rem] tracking-[2px] block mt-[15px]">Monday &ndash; Friday</span>
+    <span class="text-[1.5rem] text-light font-bold block border-t border-b border-border-dim py-[10px] mx-auto my-[15px] text-nowrap">7:00 AM &ndash; 6:00 PM</span>
     <a href="mailto:cookc@ascensionofchrist.org" class="inline-block mt-[10px] px-[24px] py-[10px] border border-accent !text-white uppercase tracking-[2px] text-[0.85rem] hover:bg-accent hover:text-dark-bg transition-colors duration-300 hover:no-underline">Inquire About Enrollment</a>
   </div>
 
@@ -37,7 +37,7 @@ changefreq: monthly
 
   <div class="border-l-[3px] border-accent bg-[rgba(255,255,255,0.02)] py-[25px] px-[20px] sm:px-[40px] mb-[40px]">
     <h2 class="text-accent-blue uppercase text-[1.2rem] tracking-[2px] mt-0">Our Curriculum</h2>
-    <p class="mt-[0.25rem]">We use the <strong class="text-accent">One in Christ Curriculum</strong> — a comprehensive, play-based, Christ-centered resource for Infant, Toddler, and Preschool education. It provides a themed, constructive environment and delivers age-appropriate activities for sharing the love of Jesus in everyday fun.</p>
+    <p class="mt-[0.25rem]">We use the <strong class="text-accent">One in Christ Curriculum</strong> &ndash; a comprehensive, play-based, Christ-centered resource for Infant, Toddler, and Preschool education. It provides a themed, constructive environment and delivers age-appropriate activities for sharing the love of Jesus in everyday fun.</p>
     <p class="mt-[15px]">Bible stories, finger play, creative activities, prayers, and songs help our little ones develop a love for the Lord and for learning. Our Preschool and Pre-K classrooms also incorporate the <strong class="text-accent">Handwriting Without Tears</strong> curriculum to support each child's individual development.</p>
   </div>
 
@@ -59,7 +59,7 @@ changefreq: monthly
       <div class="p-[25px]">
         <h3 class="text-accent text-[1.1rem] uppercase tracking-[2px] mt-0 mb-[8px]">Tiny Sprouts</h3>
         <p class="text-accent-blue text-[0.85rem] uppercase tracking-[1px] mb-[12px]">Transitional Infants &amp; Young Toddlers</p>
-        <p class="text-[0.95rem] mt-0">Our Tiny Sprouts teachers provide a dynamic, adventurous, and loving environment to nurture budding curiosity. In connection with the One in Christ Curriculum, the daily routine is enriched with language, music, and personalized hands-on activities that address all areas of development. The schedule is flexible to ensure every child's needs are met.</p>
+        <p class="text-[0.95rem] mt-0">Our Tiny Sprouts teachers provide a dynamic, adventurous, and loving environment to nurture budding curiosity. In connection with the One in Christ Curriculum, we focus on building trust and supporting each child's emerging independence and communication skills.</p>
       </div>
     </div>
 
@@ -68,7 +68,7 @@ changefreq: monthly
       <div class="p-[25px]">
         <h3 class="text-accent text-[1.1rem] uppercase tracking-[2px] mt-0 mb-[8px]">Toddlers &amp; Twos</h3>
         <p class="text-accent-blue text-[0.85rem] uppercase tracking-[1px] mb-[12px]">Older Toddlers</p>
-        <p class="text-[0.95rem] mt-0">Our enthusiastic Toddler team serves as nurturers, playmates, and educators to the terrific, talented, and talkative toddlers & twos! Teachers encourage positive communication — emphasizing expression of emotions and social interactions — in a loving Christian atmosphere. The interactive daily routine strengthens cognitive, fine/gross motor, social/emotional, and language skills, including toilet training support.</p>
+        <p class="text-[0.95rem] mt-0">Our enthusiastic Toddler team serves as nurturers, playmates, and educators to the terrific, talented, and talkative toddlers &amp; twos! Teachers encourage positive social-emotional development, language growth, and independence through play-based learning.</p>
       </div>
     </div>
 
@@ -77,7 +77,7 @@ changefreq: monthly
       <div class="p-[25px]">
         <h3 class="text-accent text-[1.1rem] uppercase tracking-[2px] mt-0 mb-[8px]">Preschool A &amp; B</h3>
         <p class="text-accent-blue text-[0.85rem] uppercase tracking-[1px] mb-[12px]">Preschool</p>
-        <p class="text-[0.95rem] mt-0">Our Preschool teachers provide a comprehensive and engaging educational experience that sets the foundation for school readiness. The daily routine promotes sharing, following directions, using words effectively, listening, and self-regulation. Activities address the social, emotional, cognitive, and physical tasks of preschool in a fun, enthusiastic, Christ-centered environment.</p>
+        <p class="text-[0.95rem] mt-0">Our Preschool teachers provide a comprehensive and engaging educational experience that sets the foundation for school readiness. The daily routine promotes academic skills, social-emotional growth, and a Christ-centered worldview.</p>
       </div>
     </div>
 
@@ -86,7 +86,7 @@ changefreq: monthly
       <div class="p-[25px]">
         <h3 class="text-accent text-[1.1rem] uppercase tracking-[2px] mt-0 mb-[8px]">Pre-K</h3>
         <p class="text-accent-blue text-[0.85rem] uppercase tracking-[1px] mb-[12px]">Kindergarten Preparation</p>
-        <p class="text-[0.95rem] mt-0">Our Pre-K program is designed to prepare children for Kindergarten. The curriculum is play-based, Christ-centered, and developmentally appropriate to meet the needs of each child. We utilize the One in Christ curriculum and Handwriting Without Tears alongside many other resources. Daily activities include Jesus time, free play, circle time, story time, snack, lunch, and rest time. Centers each day cover literacy, math, science, social studies, and fine motor skills. Weekly activities include music, gross motor skills, a letter and number of the week, handwriting, and enrichment projects.</p>
+        <p class="text-[0.95rem] mt-0">Our Pre-K program is designed to prepare children for Kindergarten. The curriculum is play-based, Christ-centered, and developmentally appropriate to meet the needs of our Pre-K learners.</p>
       </div>
     </div>
 
@@ -96,8 +96,8 @@ changefreq: monthly
     <span class="text-white uppercase font-bold tracking-[2px]">Ready to Learn More?</span>
     <p class="my-[10px]">Contact Chelsea Cook to schedule a tour or ask about enrollment availability.</p>
     <div class="flex flex-col sm:flex-row justify-center gap-4 mt-[15px]">
-      <a href="mailto:cookc@ascensionofchrist.org" class="inline-block px-[24px] py-[10px] border border-accent text-accent uppercase tracking-[2px] text-[0.85rem] hover:bg-accent hover:text-dark-bg transition-colors duration-300 hover:no-underline">Email Us</a>
-      <a href="tel:2486448890" class="inline-block px-[24px] py-[10px] border border-accent-blue text-accent-blue uppercase tracking-[2px] text-[0.85rem] hover:bg-accent-blue hover:text-dark-bg transition-colors duration-300 hover:no-underline">Call 248-644-8890</a>
+      <a href="mailto:cookc@ascensionofchrist.org" class="inline-block px-[24px] py-[10px] border border-accent text-accent uppercase tracking-[2px] text-[0.85rem] hover:bg-accent hover:text-dark-bg transition-colors duration-300 hover:no-underline">Inquire by Email</a>
+      <a href="tel:2486448890" class="inline-block px-[24px] py-[10px] border border-accent-blue text-accent-blue uppercase tracking-[2px] text-[0.85rem] hover:bg-accent-blue hover:text-dark-bg transition-colors duration-300 hover:no-underline">Call Us</a>
     </div>
   </div>
 
