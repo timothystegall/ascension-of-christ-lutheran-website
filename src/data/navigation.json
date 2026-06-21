@@ -1,8 +1,13 @@
 {
 	"items": [
 		{
-			"text": "Divine Service Livestream",
+			"text": "Livestream",
 			"url": "https://youtube.com/@aoclcms/live",
+			"external": true
+		},
+		{
+			"text": "Bulletin",
+			"url": "https://ascensionofchrist.org/assets/documents/bulletin/Trinity3Bulletin.pdf",
 			"external": true
 		},
 		{
