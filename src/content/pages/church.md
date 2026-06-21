@@ -33,9 +33,9 @@ changefreq: monthly
     </a>
 
     <div class="w-full md:w-1/2 max-w-[1300px] text-left mt-[25px]">
-        <p class="text-[1.25rem] text-white">At Ascension of Christ, you will find a welcoming community gathered around the objective promises of God in Word & Sacrament. We are a parish of the baptized, bound together by a shared confession of the infallible and inerrant Holy Scriptures, the Lutheran Confessions, and a love of the historic liturgy: where we are shown our sins by the Law, and comforted with the promise of the Gospel: Christ crucified for our sins.</p>
+        <p class="text-[1.25rem] text-white">At Ascension of Christ, you will find a welcoming community gathered around the objective promises of God in Word & Sacrament. We are a parish of the biblical, confessional Lutheran Church—Missouri Synod.</p>
         <div class="mt-4 text-[1.25rem] text-white">Visiting for the first time? Find out more information on our <a href="{{ '/visitor/' | url }}">Visitor FAQ</a> page.</div>
-        <div class="mt-3 text-[1.25rem] text-white">We gather together for the Divine Service with Holy Communion every Sunday morning at <div class="text-white inline text-[1.35rem]"><b><i>10:15AM EST</i></b></div>. For more on our worship practice, see our <a href="{{ '/worship' | url }}">Worship</a> page.</div>
+        <div class="mt-3 text-[1.25rem] text-white">We gather together for the Divine Service with Holy Communion every Sunday morning at <span class="text-white inline text-[1.35rem]"><b><i>10:15 AM</i></b></span>.</div>
     </div>
 
     <div class="text-[1.25rem] w-full md:w-1/2 max-w-[1300px]">
@@ -47,11 +47,11 @@ changefreq: monthly
                 <li class="text-white mb-2">God sent His Son Jesus Christ, true man and true God, to save us from our lost condition. Our debt has been paid through Christ's righteous life and sacrificial death on the Cross.</li>
                 <li class="text-white mb-2">A person is saved (justified) by grace alone through faith alone in Christ as our Savior. We contribute nothing to our salvation.</li>
                 <li class="text-white mb-2">God chooses us, not the other way around. We have no power to accept Christ, but we can reject Him. Saving faith is a gift of God.</li>
-                <li class="text-white mb-2">Faith is a gift, created and maintained through the preaching of God’s Word and administration of His Sacraments.</li>
+                <li class="text-white mb-2">Faith is a gift, created and maintained through the preaching of God's Word and administration of His Sacraments.</li>
                 <li class="text-white mb-2">Baptism saves. Through the Sacrament of Holy Baptism, we become new creatures, but the "old Adam" is constantly with us, as long as we're here on earth. We are thus <i>simul justus et peccator</i>—at the same time saint and sinner. Baptism is to be administered not only to adults, but also to infants.</li>
                 <li class="text-white mb-2">The consecrated bread and wine in the Sacrament of Holy Communion are the true Body and Blood of the Lord Jesus Christ. The Eucharist is a precious gift given to us Christians to eat and to drink for the forgiveness of our sins.</li>
-                <li class="text-white mb-2">Good works can’t save us, but they are expected of us—for the good of our neighbor.</li>
-                <li class="text-white mb-2">The Holy Bible is God’s Word and is inspired, infallible, and inerrant. The Scriptures are the sole infallible & final rule and norm for Christian doctrine and life.</li>
+                <li class="text-white mb-2">Good works can't save us, but they are expected of us—for the good of our neighbor.</li>
+                <li class="text-white mb-2">The Holy Bible is God's Word and is inspired, infallible, and inerrant. The Scriptures are the sole infallible & final rule and norm for Christian doctrine and life.</li>
                 <li class="text-white">We accept without reservation the 1580 Book of Concord as a correct exposition of the teachings of the Bible, holding steadfastly a <i>quia</i> subscription to the Lutheran Confessions as the confession of our Church.</li>
             </ul>
             <p class="text-white !mt-4">For a simple understanding of our doctrine, we invite you to read the <a href="https://catechism.cph.org/" target="_blank">Small Catechism</a> or to read about what congregations of The Lutheran Church—Missouri Synod (LCMS) <a href="https://www.lcms.org/about/beliefs" target="_blank">believe and practice</a>.</p>
