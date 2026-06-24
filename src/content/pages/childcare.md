@@ -18,7 +18,7 @@ changefreq: monthly
     <img src="/assets/images/jesus-blessing-children.jpg" alt="Ascension Child Care Center" class="w-full max-h-[300px] object-cover object-top block border-b border-gold-dim mb-[30px]">
     <p class="text-[1.15rem] px-[20px]">We are a state-licensed child care center accepting children <strong class="text-accent">ages 6 weeks and up</strong>. Limited enrollment is available — inquire about enrolling your child today!</p>
     <span class="text-accent-blue uppercase text-[0.9rem] tracking-[2px] block mt-[15px]">Monday &ndash; Friday</span>
-    <span class="text-[1.5rem] text-light font-bold block border-t border-b border-border-dim py-[10px] mx-auto my-[15px] text-nowrap">7:00 AM &ndash; 6:00 PM</span>
+    <span class="text-[1.5rem] text-light font-bold block border-t border-b border-border-dim py-[10px] mx-auto mt-[15px] text-nowrap">7:00 AM &ndash; 6:00 PM</span>
   </div>
 
   <div class="border-l-[3px] border-accent bg-[rgba(255,255,255,0.02)] py-[25px] px-[20px] sm:px-[40px] mb-[40px] flex flex-col sm:flex-row gap-[20px] sm:gap-[40px] items-center">
