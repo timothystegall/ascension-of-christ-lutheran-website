@@ -14,7 +14,7 @@ changefreq: monthly
     <img src="/assets/images/child-care-logo.png" alt="Ascension Early Child Care Center — Rooted In Faith" class="max-w-full h-auto max-h-[130px] w-auto border-3 border-accent rounded-lg">
   </header>
 
-  <div class="border border-accent bg-gradient-to-b from-[#202830] to-[rgba(161,181,203,0.05)] pb-[40px] mb-[40px] text-center relative overflow-hidden">
+  <div class="border border-accent bg-gradient-to-b from-[#202830] to-[rgba(161,181,203,0.05)] mb-[40px] text-center relative overflow-hidden">
     <img src="/assets/images/jesus-blessing-children.jpg" alt="Ascension Child Care Center" class="w-full max-h-[300px] object-cover object-top block border-b border-gold-dim mb-[30px]">
     <p class="text-[1.15rem] px-[20px]">We are a state-licensed child care center accepting children <strong class="text-accent">ages 6 weeks and up</strong>. Limited enrollment is available — inquire about enrolling your child today!</p>
     <span class="text-accent-blue uppercase text-[0.9rem] tracking-[2px] block mt-[15px]">Monday &ndash; Friday</span>
