@@ -126,7 +126,7 @@ const normalizeBgRef = (ref) =>
 	ref.replace(/^([A-Za-z]+\.)/, (match) => BG_BOOK_MAP[match] ?? match);
 
 const bgLink = (ref) =>
-	`https://www.biblegateway.com/passage/?search=${encodeURIComponent(normalizeBgRef(ref))}&version=NKJV`;
+	`https://www.biblegateway.com/passage/?search=${encodeURIComponent(normalizeBgRef(ref))}&version=ESV`;
 
 function buildReadingRows(readings, festivalTitle, daily) {
 	let html = "";
